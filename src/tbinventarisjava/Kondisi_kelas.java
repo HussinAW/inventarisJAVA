@@ -176,6 +176,7 @@ public class Kondisi_kelas {
     }
 
     
+    
     public void setKondisi_jendela(String Kondisi_jendela) {
         this.Kondisi_jendela = Kondisi_jendela;
     }
