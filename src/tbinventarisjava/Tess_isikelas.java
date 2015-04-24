@@ -71,6 +71,7 @@ Isikelas baru = new Isikelas();
     System.out.println("==================================================================================================");
   }     
   
+  
   public void analisis_lampu(){
       System.out.println("Masukkan jumlah lampu = ");
       baru.setJumlah_lampu(input.nextInt());
