@@ -3,24 +3,23 @@ import java.util.Scanner;
 public class Tess_isikelas {
 Isikelas baru = new Isikelas();
    Scanner input = new Scanner(System.in);
-   // Untuk penulisan "jawaban Posisi" harap kalimat tidak di spasi dan huruf kecil pada awal kalimat
    public void analisis_kelistrikan(){
-       System.out.println("Masukkan jumlah stopkontak = ");
+       System.out.print("Masukkan jumlah stopkontak = ");
        baru.setJumlah_stopkontak (input.nextInt());
        if(baru.getJumlah_stopkontak()>=4){
-        System.out.println("hasil = " +baru.getJumlah_stopkontak()+ " Sesuai ");
+        System.out.print(" " +baru.getJumlah_stopkontak()+ " Sesuai ");
     }
     else
     {
-        System.out.println("hasil = " +baru.getJumlah_stopkontak()+ " Tidak sesuai ");
+        System.out.print(" " +baru.getJumlah_stopkontak()+ " Tidak sesuai\n ");
     }
        System.out.println(" Jumlah stopkontak dalam keadaan baik = ");
        baru.setKondisi_stopkontak(input.nextInt());
        if(baru.getKondisi_stopkontak()== 4){
-    System.out.println(" " + baru.getKondisi_stopkontak()+ " sesuai");     
+    System.out.print(" " + baru.getKondisi_stopkontak()+ " sesuai");     
     }
     else{
-        System.out.println(" " + baru.getKondisi_stopkontak()+ " Tidak sesuai\n"); 
+        System.out.print(" " + baru.getKondisi_stopkontak()+ " Tidak sesuai\n"); 
     }
        
        System.out.println("+*UNTUK POSISI PILIH SALAH SATU ANTARA dekatdosen ATAU pojokruang ATAU lainnya+*");
@@ -28,13 +27,13 @@ Isikelas baru = new Isikelas();
        System.out.println("Posisi stopkontak berada = ");
        baru.setPosisi_stopkontak(input.next());
     if(baru.getPosisi_stopkontak().equals("pojokruang")){
-    System.out.println("Maka : " + baru.getPosisi_stopkontak() + " Sesuai");    
+    System.out.print(" : " + baru.getPosisi_stopkontak() + " Sesuai");    
     }
     else if(baru.getPosisi_stopkontak().equals("dekatdosen")){
-    System.out.println("Maka :  " + baru.getPosisi_stopkontak() + " Sesuai");     
+    System.out.print(" :  " + baru.getPosisi_stopkontak() + " Sesuai");     
     }
     else{
-     System.out.println("Maka : " +baru.getPosisi_stopkontak() + " Tidak sesuai\n\n");    
+     System.out.print("Maka : " +baru.getPosisi_stopkontak() + " Tidak sesuai\n\n");    
     }
    
     
