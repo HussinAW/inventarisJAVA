@@ -27,65 +27,66 @@ Isikelas baru = new Isikelas();
        System.out.println("Posisi stopkontak berada = ");
        baru.setPosisi_stopkontak(input.next());
     if(baru.getPosisi_stopkontak().equals("pojokruang")){
-    System.out.print(" : " + baru.getPosisi_stopkontak() + " Sesuai");    
+    System.out.print(" : " + baru.getPosisi_stopkontak() + " Sesuai\n");    
     }
     else if(baru.getPosisi_stopkontak().equals("dekatdosen")){
-    System.out.print(" :  " + baru.getPosisi_stopkontak() + " Sesuai");     
+    System.out.print(" :  " + baru.getPosisi_stopkontak() + " Sesuai\n");     
     }
     else{
-     System.out.print("Maka : " +baru.getPosisi_stopkontak() + " Tidak sesuai\n\n");    
+     System.out.print(" : " +baru.getPosisi_stopkontak() + " Tidak sesuai\n");    
     }
    
-    
+   System.out.println("=================================================================================================");
     
    }
   public void analisis_LCD(){
       System.out.println("Masukkan jumlah kabel LCD = ");
       baru.setJumlah_kabel_LCD(input.nextInt());
       if (baru.getJumlah_kabel_LCD()>=1){
-     System.out.println("Jumlah  = " + baru.getJumlah_kabel_LCD() + " Sesuai");   
+     System.out.print(" => " + baru.getJumlah_kabel_LCD() + " Sesuai");   
     }
     else{
-    System.out.println("Jumlah   = " + baru.getJumlah_kabel_LCD() + " Tidak sesuai");    
+    System.out.print(" => " + baru.getJumlah_kabel_LCD() + " Tidak sesuai\n\n");    
     }
-      // pada kondisi ini harap pilih "berfungsi" sekali lagi penulisan harap seperti disamping
+      System.out.println("KONDISI KABEL LCD PILIH berfungsi ATAU tidak berfungsi");
+      System.out.println("PENULISAN HARUS SESUAI DENGAN PILIHAN\n");
       System.out.println("Kondisi kabel LCD = ");
       baru.setKondisi_kabel_LCD(input.next());
     if(baru.getKondisi_kabel_LCD().equals("berfungsi")){
-    System.out.println(" " + baru.getKondisi_kabel_LCD()+ " Sesuai");    
+    System.out.print(" => " + baru.getKondisi_kabel_LCD()+ " Sesuai");    
     }
     else{
-    System.out.println(" " + baru.getKondisi_kabel_LCD()+ " Tidak sesuai");    
+    System.out.print(" => " + baru.getKondisi_kabel_LCD()+ " Tidak sesuai\n\n");    
     }
-    //
+  System.out.println("POSISI KABEL LCD PILIH ANTARA dekatdosen ATAU lainnya");
       System.out.println("Masukkan posisi kabel LCD = ");
       baru.setPosisi_kabel_LCD(input.next());
       if(baru.getPosisi_kabel_LCD().equals("dekatdosen")){
-    System.out.println("Posisi kabel LCD    = " + baru.getPosisi_kabel_LCD()+"Sesuai");    
+    System.out.print(" => " + baru.getPosisi_kabel_LCD()+" Sesuai ");    
     }
     else{
-        System.out.println("Posisi kabel LCD    = " + baru.getPosisi_kabel_LCD()+"Tidak sesuai");
+        System.out.println(" => " + baru.getPosisi_kabel_LCD()+" Tidak sesuai ");
     }
-   
-      
+    System.out.println("==================================================================================================");
   }     
+  
   public void analisis_lampu(){
       System.out.println("Masukkan jumlah lampu = ");
       baru.setJumlah_lampu(input.nextInt());
       if(baru.getJumlah_lampu()>=18){
-      System.out.println("Jumlah Lampu = " + baru.getJumlah_lampu() +"Sesuai");   
+      System.out.print(" => " + baru.getJumlah_lampu() +" Sesuai ");   
     }
       //
     else{
-     System.out.println("Jumlah Lampu = " + baru.getJumlah_lampu() +"tidak sesuai");     
+     System.out.print(" => " + baru.getJumlah_lampu() +" Tidak sesuai ");     
     }
       System.out.println("Masukkan kondisi lampu = ");
       baru.setKondisi_lampu(input.nextInt());
     if(baru.getKondisi_lampu()==18){
-     System.out.println("Kondisi Lampu keadaan baik   = " + baru.getKondisi_lampu()+"Sesuai");   
+     System.out.print(" => " + baru.getKondisi_lampu()+" Sesuai ");   
     }
     else{
-     System.out.println("Kondisi Lampu   = " + baru.getKondisi_lampu()+"Tidak sesuai");    
+     System.out.println(" => " + baru.getKondisi_lampu()+" Tidak sesuai ");    
     }
       System.out.println("Masukkan posisi lampu = ");
       baru.setPosisi_lampu(input.next());
