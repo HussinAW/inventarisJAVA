@@ -86,6 +86,7 @@ Isikelas baru = new Isikelas();
      System.out.print(" => " + baru.getKondisi_lampu()+" Sesuai ");   
     }
     
+    
     else{
      System.out.println(" => " + baru.getKondisi_lampu()+" Tidak sesuai ");    
     }
