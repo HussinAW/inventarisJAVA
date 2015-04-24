@@ -59,6 +59,7 @@ Isikelas baru = new Isikelas();
     System.out.print(" => " + baru.getKondisi_kabel_LCD()+ " Tidak sesuai\n\n");    
     }
   System.out.println("POSISI KABEL LCD PILIH ANTARA dekatdosen ATAU lainnya");
+  System.out.println("");
       System.out.println("Masukkan posisi kabel LCD = ");
       baru.setPosisi_kabel_LCD(input.next());
       if(baru.getPosisi_kabel_LCD().equals("dekatdosen")){
@@ -88,7 +89,7 @@ Isikelas baru = new Isikelas();
     
     
     else{
-     System.out.println(" => " + baru.getKondisi_lampu()+" Tidak sesuai ");    
+     System.out.print(" => " + baru.getKondisi_lampu()+" Tidak sesuai \n\n");    
     }
       System.out.println("Masukkan posisi lampu = ");
       baru.setPosisi_lampu(input.next());
