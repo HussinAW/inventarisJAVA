@@ -82,18 +82,62 @@ public class Kondisi_kelas {
         else{
             System.out.println("suhu tidak sesuai");
         }
-        
-        
-        System.out.println("kondisi="+Kondisi_suhu);
-        System.out.println("kondisi="+Kondisi_kebisingan);
-        System.out.println("kondisi"+Kondisi_bau);
-        System.out.println("kondisi="+Kondisi_kebocoran);
-        System.out.println("kondisi="+Kondisi_kerusakan);
-        System.out.println("kondisi="+Kondisi_keausan);
-        System.out.println("kondisi="+Kondisi_kekokohan);
-        System.out.println("kondisi="+Kondisi_kuncipintu);
-        System.out.println("kondisi="+ Kondisi_kuncijendela);
+         if (getKondisi_suhu()>=25 && getKondisi_suhu()<=35){
+            System.out.println("suhu sesuai");
+        }
+        else{
+            System.out.println("suhu tidak sesuai");
+       
+            if (getKondisi_kebisingan().equals("tidak bising")){
+            System.out.println("kondisi="+Kondisi_kebisingan+"sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+            if (getKondisi_kebocoran().equals("tidak bising")){
+            System.out.println("kondisi="+Kondisi_kebisingan+"sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+                if (getKondisi_kerusakan().equals("tidak bising")){
+            System.out.println("kondisi="+Kondisi_kerusakan+"sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+            if (getKondisi_keausan().equals("tidak bising")){
+            System.out.println("kondisi="+Kondisi_keausan+"sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+            if (getKondisi_kekokohan().equals("tidak bising")){
+            System.out.println("kondisi="+Kondisi_kekokohan+"sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+            if (getKondisi_kuncipintu().equals("tidak bising")){
+            System.out.println("kondisi="+Kondisi_kuncipintu+"sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");    
+        }
+            if (getKondisi_kuncijendela().equals("tidak bising")){
+            System.out.println("kondisi="+Kondisi_kuncijendela+"sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }    
+            if (getKondisi_bahaya().equals("aman")){
+            System.out.println("kondisi="+Kondisi_bahaya+"aman");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
         System.out.println("kondisi="+Kondisi_bahaya);
+     }
      }
     public String getKondisi_lantai() {
         return Kondisi_lantai;
