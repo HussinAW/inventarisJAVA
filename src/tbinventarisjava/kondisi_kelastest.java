@@ -47,4 +47,3 @@ public class kondisi_kelastest {
     }
 
     
-}
