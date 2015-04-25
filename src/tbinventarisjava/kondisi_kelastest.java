@@ -1,4 +1,3 @@
-
 package tbinventarisjava;
 
 import java.util.Scanner;
