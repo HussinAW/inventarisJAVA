@@ -31,10 +31,11 @@ public class kondisi_kelastest {
         public void kebersihan_ruang_kelas(){
             System.out.println("masukan kondisi sirkulasi udara(baik/buruk)=");
             jay.setKondisi_pintu(input.next());
-            System.out.println("masukan kondisi pencahayaan(1->350)=");
+            System.out.println("masukan kondisi pencahayaan (dalam satuan lux)=");
             jay.setKondisi_pencahayaan(input.nextInt());
-            
-           
+            System.out.println("masukan kondisi kelembapan(dalam satuan fanrenheit)=");
+            jay.setKondisi_kelembapan(input.nextInt());
+            System.out.println("masukan kondisi suhu");
         }
     }
 
