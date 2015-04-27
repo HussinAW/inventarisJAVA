@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TBinventarisJAVA;
+package tbinventarisjava;
 import java.util.Scanner;
 /**
  *
@@ -127,8 +127,14 @@ public class Kelas {
         if(panjang!=luas){
             Bentuk_ruang="Persegi Panjang";
         }
+        else{
+            Bentuk_ruang="BukanPersegiPanjang";
+        }
         if(Bentuk_ruang=="Persegi Panjang"){
             System.out.println("Sesuai");
+        }
+        else{
+            System.out.println("Tidak sesuai");
         }
     }
 }
