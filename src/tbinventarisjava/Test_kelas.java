@@ -5,7 +5,6 @@ public class Test_kelas {
     Scanner input = new Scanner (System.in);
     Kelas kelas = new Kelas();
     
-    
     public void Input_kelas(){
         System.out.println("Masukan nama ruang : ");
         kelas.setNama_ruang(input.next());
@@ -26,18 +25,19 @@ public class Test_kelas {
         }
     
     public void Show_kelas(){
-        System.out.println("\n\n===================================================");
+       // System.out.println("\n\n===================================================");
         System.out.println("Nama ruang:"+kelas.getNama_ruang() );
         System.out.println("Lokasi ruang: "+kelas.getLokasi_ruang());
         System.out.println("Program studi: "+kelas.getProgram_studi());
         System.out.println("Panjang ruang: "+kelas.getPanjang_ruang());
         System.out.println("Lebar ruang: "+kelas.getPLebar_ruang());
         System.out.println("Jumlah kursi: "+kelas.getJumlah_kursi());
-        System.out.println("Jumlah pintu: "+kelas.getJumlah_pintu());
-        System.out.println("Jumlah jendela: "+kelas.getJumlah_jendela());
+        System.out.println(kelas.getJumlah_pintu());
+        System.out.println(kelas.getJumlah_jendela());
         System.out.println("Luas ruang: "+kelas.Luas_ruang());
-        System.out.println("Rasio kelas: "+kelas.Rasio_ruang());
+        System.out.println("Bentuk ruang: "+kelas.Bentuk());
+        System.out.println(kelas.Bentuk2());
+        System.out.println(kelas.Rasio_ruang());
+        
     }
-    
-    
 }
