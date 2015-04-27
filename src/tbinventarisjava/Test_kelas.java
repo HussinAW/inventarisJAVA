@@ -5,6 +5,7 @@ public class Test_kelas {
     Scanner input = new Scanner (System.in);
     Kelas kelas = new Kelas();
     
+    
     public void Input_kelas(){
         System.out.println("Masukan nama ruang : ");
         kelas.setNama_ruang(input.next());
@@ -37,4 +38,6 @@ public class Test_kelas {
         System.out.println("Luas ruang: "+kelas.Luas_ruang());
         System.out.println("Rasio kelas: "+kelas.Rasio_ruang());
     }
+    
+    
 }
