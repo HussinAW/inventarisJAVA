@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tbinventarisjava;
+package TBinventarisJAVA;
 import java.util.Scanner;
 /**
  *
@@ -64,21 +64,71 @@ public class Kelas {
     public void setJumlah_pintu(int jumlah_pintu){
         Jumlah_pintu=jumlah_pintu;
     }
-    public int getJumlah_pintu(){
-        return Jumlah_pintu;
+    public String getJumlah_pintu(){
+        if(Jumlah_pintu>=2){
+            System.out.println("Jumlah pintu: "+Jumlah_pintu);
+            return "Sesuai";
+        }
+        else{
+            System.out.println("Jumlah pintu: "+Jumlah_pintu);
+            return "Tidak sesuai";
+        }
     }
     public void setJumlah_jendela(int jumlah_jendela){
         Jumlah_jendela = jumlah_jendela;
     }
-    public int getJumlah_jendela(){
-        return Jumlah_jendela;
+    public String getJumlah_jendela(){
+        if(Jumlah_jendela>=1){
+            System.out.println("Jumlah jendela: "+Jumlah_jendela);
+            return "Sesuai";
+        }
+        else{
+            System.out.println("Jumlah jendela: "+Jumlah_jendela);
+            return "Tidak sesuai";
+        }
     }
     public int Luas_ruang(){
-        Luas_ruang=Panjang_ruang*Lebar_ruang;
+        Luas_ruang = Panjang_ruang*Lebar_ruang;
         return Luas_ruang;
+    }   
+    String Bentuk(){
+        if(Luas_ruang!=Panjang_ruang){
+            Bentuk_ruang="PersegiPanjang";
+            return Bentuk_ruang;
+        }
+        else{
+            return "Bukan persegi panjang";
+        }
     }
-    public double Rasio_ruang(){
+    String Bentuk2(){
+        if(Bentuk_ruang=="PersegiPanjang"){
+            return "Sesuai";
+        }
+        else{
+            return "Tidak Sesuai";
+        }
+    }
+    public String Rasio_ruang(){
         Rasio_ruang=Luas_ruang/Jumlah_kursi;
-        return Rasio_ruang;
+        if(Rasio_ruang>=0.5){
+            System.out.println("Rasio kelas: "+Rasio_ruang);
+            return "Sesuai";
+        }
+        else{
+            System.out.println("Rasio kelas: "+Rasio_ruang);
+            return "Tidak Sesuai";
+        }           
+    }
+    void luas(){
+        Kelas panjang = new Kelas();
+        Kelas luas = new Kelas();
+        luas.Luas_ruang();
+        panjang.getPanjang_ruang();
+        if(panjang!=luas){
+            Bentuk_ruang="Persegi Panjang";
+        }
+        if(Bentuk_ruang=="Persegi Panjang"){
+            System.out.println("Sesuai");
+        }
     }
 }
