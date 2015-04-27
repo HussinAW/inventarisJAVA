@@ -1,4 +1,4 @@
-package tbinventarisjava;
+package inventaris;
 import java.util.Scanner;
 
 public class Test_kelas {
