@@ -29,6 +29,15 @@ private String Posisi_CCTV;
     public void setJumlah_stopkontak(int Jumlah_stopkontak) {
         this.Jumlah_stopkontak = Jumlah_stopkontak;
     }
+    
+    boolean analisis_stopkontak(){
+        if(Jumlah_stopkontak>=4){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
     public int getKondisi_stopkontak() {
         return Kondisi_stopkontak;
@@ -36,6 +45,14 @@ private String Posisi_CCTV;
 
     public void setKondisi_stopkontak(int Kondisi_stopkontak) {
         this.Kondisi_stopkontak = Kondisi_stopkontak;
+    }
+    boolean analisis_kondisi_stopkontak(){
+        if(Kondisi_stopkontak==4){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public String getPosisi_stopkontak() {
@@ -45,6 +62,16 @@ private String Posisi_CCTV;
     public void setPosisi_stopkontak(String Posisi_stopkontak) {
         this.Posisi_stopkontak = Posisi_stopkontak;
     }
+    boolean analisis_posisi_stopkontak(){
+        if(Posisi_stopkontak=="pojok ruang"){
+        return true;    
+        }
+        else if(Posisi_stopkontak=="dekat dosen")
+        return true;
+        else{
+            return false;
+        }
+    }
 
     public int getJumlah_kabel_LCD() {
         return Jumlah_kabel_LCD;
@@ -53,7 +80,14 @@ private String Posisi_CCTV;
     public void setJumlah_kabel_LCD(int Jumlah_kabel_LCD) {
         this.Jumlah_kabel_LCD = Jumlah_kabel_LCD;
     }
-
+    boolean analisis_kabel_LCD(){
+        if(Jumlah_kabel_LCD>=1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     public String getKondisi_kabel_LCD() {
         return Kondisi_kabel_LCD;
     }
