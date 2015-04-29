@@ -1,10 +1,20 @@
 package tbinventarisjava;
 import java.util.Scanner;
 public class Tess_isikelas {
-Isikelas baru = new Isikelas();
-   Scanner input = new Scanner(System.in);
-   public void analisis_kelistrikan(){
-       System.out.print("Masukkan jumlah stopkontak = ");
+    Isikelas baru = new Isikelas();
+    Scanner input = new Scanner(System.in);
+   
+    public void input(){
+       System.out.print("Masukkan jumlah stopkontak: ");
+       baru.setJumlah_stopkontak(input.nextInt());
+       System.out.print("Masukkan jumlah stopkontak yang baik: " );
+       baru.setKondisi_stopkontak(input.nextInt());
+       System.out.print("Masukkan posisi stopkontak:");
+       baru.setPosisi_stopkontak(input.next());
+       
+   }
+   /*public void analisis_kelistrikan(){
+       
        baru.setJumlah_stopkontak (input.nextInt());
        if(baru.getJumlah_stopkontak()>=4){
         System.out.print(" " +baru.getJumlah_stopkontak()+ " Sesuai ");
@@ -208,5 +218,5 @@ if(baru.getPosisi_CCTV().equals("didepan")){
     else{
     System.out.println("Posisi CCTV = " + baru.getPosisi_CCTV()+"Tidak sesuai");
     }
-}    
+}    */
 }
