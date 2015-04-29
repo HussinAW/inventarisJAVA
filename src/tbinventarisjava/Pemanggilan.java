@@ -7,14 +7,15 @@ public class Pemanggilan {
        
        
        
-       OA.analisis_kelistrikan();
+      /* OA.analisis_kelistrikan();
        OA.analisis_LCD();
        OA.analisis_lampu();
        OA.analisis_kipas_angin();
        OA.analisis_AC();
        OA.analisis_internet();
        OA.analisis_CCTV();
-        jaya.Analisis_kebersihanlantai();
+ }
+       /* jaya.Analisis_kebersihanlantai();
         jaya.Analisis_kebersihandinding();
         jaya.Analisis_kebersihanatap();
         jaya.Analisis_kebersihanjendela();
@@ -30,7 +31,7 @@ public class Pemanggilan {
         jaya.Analisis_kekokohan();
         jaya.Analisis_kuncipintu();
         jaya.Analisis_kuncijendela();
-        jaya.Analisis_bahaya();
+        jaya.Analisis_bahaya();*/
         
-}
+ }
 }
