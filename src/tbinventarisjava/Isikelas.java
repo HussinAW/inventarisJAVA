@@ -159,7 +159,14 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setPosisi_lampu(String Posisi_lampu) {
         this.Posisi_lampu = Posisi_lampu;
     }
-
+    boolean analisis_Posisi_Lampu(){
+        if(Posisi_lampu=="atapruangan"){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     public int getJumlah_kipasangin() {
         return Jumlah_kipasangin;
     }
