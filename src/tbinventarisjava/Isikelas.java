@@ -96,6 +96,15 @@ private String Posisi_CCTV;
     public void setKondisi_kabel_LCD(String Kondisi_kabel_LCD) {
         this.Kondisi_kabel_LCD = Kondisi_kabel_LCD;
     }
+    boolean analisis_Kondisii_kabel_LCD(){
+     if(Kondisi_kabel_LCD=="berfungsi"){
+     return true;
+    }
+     else{
+         return false;
+     }
+    }
+     
 
     public String getPosisi_kabel_LCD() {
         return Posisi_kabel_LCD;
@@ -104,7 +113,14 @@ private String Posisi_CCTV;
     public void setPosisi_kabel_LCD(String Posisi_kabel_LCD) {
         this.Posisi_kabel_LCD = Posisi_kabel_LCD;
     }
-
+boolean analisis_Posisi_Kabel_LCD(){
+    if(Posisi_kabel_LCD=="dekatdosen"){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
     public int getJumlah_lampu() {
         return Jumlah_lampu;
     }
@@ -112,13 +128,28 @@ private String Posisi_CCTV;
     public void setJumlah_lampu(int Jumlah_lampu) {
         this.Jumlah_lampu = Jumlah_lampu;
     }
-
+    boolean analisis_lampu(){
+        if(Jumlah_lampu>=18){
+            return true;
+    }
+        else{
+            return false;
+        }
+    }
     public int getKondisi_lampu() {
         return Kondisi_lampu;
     }
 
     public void setKondisi_lampu(int Kondisi_lampu) {
         this.Kondisi_lampu = Kondisi_lampu;
+    }
+    boolean analisis_Kondisi_Lampu(){
+       if(Kondisi_lampu==18){
+           return true;
+       }
+       else{
+           return false;
+       }
     }
 
     public String getPosisi_lampu() {
