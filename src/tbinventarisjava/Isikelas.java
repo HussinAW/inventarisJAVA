@@ -22,6 +22,7 @@ private int Jumlah_CCTV;
 private int Kondisi_CCTV;
 private String Posisi_CCTV; 
 
+
     public int getJumlah_stopkontak() {
         return Jumlah_stopkontak;
     }
