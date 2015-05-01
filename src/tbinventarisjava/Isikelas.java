@@ -174,6 +174,14 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setJumlah_kipasangin(int Jumlah_kipasangin) {
         this.Jumlah_kipasangin = Jumlah_kipasangin;
     }
+    boolean analisis_kipasangin(){
+        if(Jumlah_kipasangin>=2){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
     public int getKondisi_kipasangin() {
         return Kondisi_kipasangin;
@@ -181,6 +189,14 @@ boolean analisis_Posisi_Kabel_LCD(){
 
     public void setKondisi_kipasangin(int Kondisi_kipasangin) {
         this.Kondisi_kipasangin = Kondisi_kipasangin;
+    }
+    boolean analisis_kondisi_kipasangin(){
+        if(Kondisi_kipasangin==2){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public String getPosisi_kipasangin() {
@@ -190,6 +206,14 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setPosisi_kipasangin(String Posisi_kipasangin) {
         this.Posisi_kipasangin = Posisi_kipasangin;
     }
+    boolean analisis_posisi_kipasangin(){
+        if(Posisi_kipasangin=="atapruangan"){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
     public int getJumlah_Ac() {
         return Jumlah_Ac;
@@ -197,6 +221,14 @@ boolean analisis_Posisi_Kabel_LCD(){
 
     public void setJumlah_Ac(int Jumlah_Ac) {
         this.Jumlah_Ac = Jumlah_Ac;
+    }
+    boolean analisis_Ac(){
+        if(Jumlah_Ac>=1){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public String getKondisi_Ac() {
@@ -206,7 +238,14 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setKondisi_Ac(String Kondisi_Ac) {
         this.Kondisi_Ac = Kondisi_Ac;
     }
-
+    boolean analisis_kondisi_Ac(){
+        if(Kondisi_Ac=="baik"){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     public String getPosisi_Ac() {
         return Posisi_Ac;
     }
@@ -214,7 +253,17 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setPosisi_Ac(String Posisi_Ac) {
         this.Posisi_Ac = Posisi_Ac;
     }
-
+    boolean analisis_posisi_Ac(){
+        if(Posisi_Ac=="belakang"){
+            return true;
+        }
+        else if(Posisi_Ac=="samping"){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     public String getSSID() {
         return SSID;
     }
@@ -238,7 +287,14 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setJumlah_CCTV(int Jumlah_CCTV) {
         this.Jumlah_CCTV = Jumlah_CCTV;
     }
-
+    boolean analisis_CCTV(){
+        if(Jumlah_CCTV==2){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     public int getKondisi_CCTV() {
         return Kondisi_CCTV;
     }
@@ -246,13 +302,31 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setKondisi_CCTV(int Kondisi_CCTV) {
         this.Kondisi_CCTV = Kondisi_CCTV;
     }
-
+        boolean analisis_kondisi_CCTV(){
+            if(Kondisi_CCTV==2){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
     public String getPosisi_CCTV() {
         return Posisi_CCTV;
     }
 
     public void setPosisi_CCTV(String Posisi_CCTV) {
         this.Posisi_CCTV = Posisi_CCTV;
+    }
+    boolean analisis_posisi_CCTV(){
+        if(Posisi_CCTV=="depan"){
+            return true;
+        }
+        else if(Posisi_CCTV=="belakang"){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 }
