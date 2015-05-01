@@ -271,7 +271,14 @@ boolean analisis_Posisi_Kabel_LCD(){
     public void setSSID(String SSID) {
         this.SSID = SSID;
     }
-
+    boolean analisis_internet(){
+        if(SSID=="UMM HOTSPOT"){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     public int getBandwith() {
         return Bandwith;
     }

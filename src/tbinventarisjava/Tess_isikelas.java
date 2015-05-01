@@ -7,10 +7,42 @@ public class Tess_isikelas {
     public void input(){
        System.out.print("Masukkan jumlah stopkontak: ");
        baru.setJumlah_stopkontak(input.nextInt());
-       System.out.print("Masukkan jumlah stopkontak yang baik: " );
+       System.out.print("Masukkan jumlah kondisi stopkontak yang baik: " );
        baru.setKondisi_stopkontak(input.nextInt());
        System.out.print("Masukkan posisi stopkontak:");
        baru.setPosisi_stopkontak(input.next());
+       System.out.print("Masukkan jumlah kabel LCD:");
+       baru.setJumlah_kabel_LCD(input.nextInt());
+       System.out.print("Tulis berfungsi atau tidak kabel LCD:");
+       baru.setKondisi_kabel_LCD(input.next());
+       System.out.print("Masukkan posisi kabel LCD");
+       baru.setPosisi_kabel_LCD(input.next());
+       System.out.print("Masukkan jumlah lampu:");
+       baru.setJumlah_lampu(input.nextInt());
+       System.out.print("Masukkan jumlah lampu dalam kondisi baik:");
+       baru.setKondisi_lampu(input.nextInt());
+       System.out.print("Masukkan Posisi lampu berada:");
+       baru.setPosisi_lampu(input.next());
+       System.out.print("Masukkan jumlah kipas angin:");
+       baru.setJumlah_kipasangin(input.nextInt());
+       System.out.print("Masukkan jumlah kipas angin dalam kondisi baik:");
+       baru.setKondisi_kipasangin(input.nextInt());
+       System.out.print("Masukkan posisi kipas angin:");
+       baru.setPosisi_kipasangin(input.next());
+       System.out.print("Masukkan jumlah Ac:");
+       baru.setJumlah_Ac(input.nextInt());
+       System.out.print("Masukkan kondisi Ac:");
+       baru.setKondisi_Ac(input.next());
+       System.out.print("Masukkan posisi Ac berada:");
+       baru.setPosisi_Ac(input.next());
+       System.out.print("Masukkan SSID");
+       baru.setSSID(input.next());
+       System.out.print("Masukkan jumlah CCTV:");
+       baru.setJumlah_CCTV(input.nextInt());
+       System.out.print("Masukkan jumlah kondisi baik CCTV:");
+       baru.setKondisi_CCTV(input.nextInt());
+       System.out.println("Masukkan posisi CCTV:");
+       baru.setPosisi_CCTV(input.next());
        
    }
    /*public void analisis_kelistrikan(){
