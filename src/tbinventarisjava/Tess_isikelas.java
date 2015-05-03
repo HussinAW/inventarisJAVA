@@ -42,9 +42,29 @@ public class Tess_isikelas {
        System.out.print("Masukkan jumlah kondisi baik CCTV:");
        baru.setKondisi_CCTV(input.nextInt());
        System.out.println("Masukkan posisi CCTV:");
-       baru.setPosisi_CCTV(input.next());
-       
+       baru.setPosisi_CCTV(input.next());       
    }
+    public void Show_kelas(){
+        System.out.println("Jumlah stopkontak"+baru.getJumlah_stopkontak());
+        System.out.println("Kondisi stopkontak"+baru.getKondisi_stopkontak());
+        System.out.println("Posisi stopkontak"+baru.getPosisi_stopkontak());
+        System.out.println("Jumlah kabel LCD"+baru.getJumlah_kabel_LCD());
+        System.out.println("Kondisi kabel LCD"+baru.getKondisi_kabel_LCD());
+        System.out.println("Posisi kabel LCD"+baru.getPosisi_kabel_LCD());
+        System.out.println("Jumlah lampu"+baru.getJumlah_lampu());
+        System.out.println("Kondisi lampu"+baru.getKondisi_lampu());
+        System.out.println("Posisi lampu"+baru.getPosisi_lampu());
+        System.out.println("Jumlah kipas angin"+baru.getJumlah_kipasangin());
+        System.out.println("Kondisi kipas angin"+baru.getKondisi_kipasangin());
+        System.out.println("Posisi kipas angin"+baru.getPosisi_kipasangin());
+        System.out.println("Jumlah Ac"+baru.getJumlah_Ac());
+        System.out.println("Kondisi Ac"+baru.getKondisi_Ac());
+        System.out.println("Posisi AC"+baru.getPosisi_Ac());
+        System.out.println("SSID"+baru.getSSID());
+        System.out.println("Jumlah CCTV"+baru.getJumlah_CCTV());
+        System.out.println("Kondisi CCTV"+baru.getKondisi_CCTV());
+        System.out.println("Posisi CCTV"+baru.getPosisi_CCTV());
+    }
    /*public void analisis_kelistrikan(){
        
        baru.setJumlah_stopkontak (input.nextInt());
