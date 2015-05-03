@@ -268,6 +268,7 @@ if(baru.getPosisi_CCTV().equals("didepan")){
     System.out.println("Posisi CCTV = " + baru.getPosisi_CCTV()+"Sesuai");    
     }
     else{
+    
     System.out.println("Posisi CCTV = " + baru.getPosisi_CCTV()+"Tidak sesuai");
     }
 }    */
