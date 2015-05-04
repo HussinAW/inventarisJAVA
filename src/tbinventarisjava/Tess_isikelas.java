@@ -1,8 +1,9 @@
 package tbinventarisjava;
 import java.util.Scanner;
-public class Tess_isikelas {
+public class Tess_isikelas extends Induk {
     Isikelas baru = new Isikelas();
-    Scanner input = new Scanner(System.in);
+    
+    //Scanner input = new Scanner(System.in);
    
     public void input(){
        System.out.print("Masukkan jumlah stopkontak: ");
