@@ -1,4 +1,4 @@
-package TBinventarisJAVA;
+package tbinventarisjava;
 
 
 public class Kondisi_kelas {
