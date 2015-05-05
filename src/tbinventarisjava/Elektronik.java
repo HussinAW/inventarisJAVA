@@ -1,4 +1,4 @@
-package tbinventarisJAVA;
+package tbinventarisjava;
 
 import java.util.Scanner;
 public class Elektronik {
