@@ -2,31 +2,29 @@ package tbinventarisjava;
 import java.util.Scanner;
 public class kondisi_kelastest {
     Kondisi_kelas jay = new Kondisi_kelas();
-       Scanner input = new Scanner(System.in);
+
+    Scanner input = new Scanner(System.in);
+    /*
+    public void input(){
+        System.out.println("Masukan kondisi lantai: ");
+        jay.setKondisi_lantai(input.next());
+        System.out.println("Masukan kondisi dinding: ");
+        jay.setKondisi_dinding(input.next());
+        System.out.println("Masukan kondisi atap: ");
+        jay.setKondisi_atap(input.next());
+        System.out.println("Masukan kebersihan pintu: ");
+        jay.setKodisi_pintu(input.next());
+        System.out.println("Masukan kebersihan jendela: ");
+        
+    }
     
-          public void Analisis_kebersihanlantai(){
-              System.out.println("masukkan kondisi lantai=");
-              jay.setKondisi_lantai(input.next());
-              
-              if(jay.getKondisi_lantai().equals("bersih")){
-         System.out.println(" => " + jay.Kondisi_lantai() + " Sesuai");   
-            }
-            else{
-            System.out.println(" => " + jay.getKondisi_lantai() + " Tidak sesuai\n");  
-              }    
-              
-              }
-          public void Analisis_kebersihandinding(){
-              System.out.println("masukkan kondisi dinding=");
-              jay.setKondisi_dinding(input.next());
-              
-              if(jay.getKondisi_dinding().equals("bersih")){
-         System.out.println(" => " + jay.Kondisi_dinding() + " Sesuai");   
-            }
-            else{
-            System.out.println(" => " + jay.getKondisi_dinding() + " Tidak sesuai\n");  
-              }    
-          }
+    public void show(){
+        System.out.println("Kondisi lantai: "+jay.getKondisi_lantai());
+        System.out.println("Kondisi dinding: "+jay.getKondisi_dinding);
+        
+    }
+   
+    /*
           public void Analisis_kebersihanatap(){
               System.out.println("masukkan kondisi atap=");
               jay.setKondisi_atap(input.next());
@@ -202,6 +200,6 @@ public class kondisi_kelastest {
             else{
             System.out.println(" => " + jay.getKondisi_bahaya() + " Tidak sesuai\n");
           }
-}
+}*/
 }
 
