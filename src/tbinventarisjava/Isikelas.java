@@ -275,9 +275,13 @@ boolean analisis_Posisi_Kabel_LCD(){
         if(SSID=="UMM HOTSPOT"){
             return true;
         }
+        else if(SSID=="login"){
+            return true;
+        }
         else{
             return false;
         }
+        
     }
     public int getBandwith() {
         return Bandwith;
