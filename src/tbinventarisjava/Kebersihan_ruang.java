@@ -1,4 +1,4 @@
-package TBinventarisJAVA;
+package tbinventarisJAVA;
 import java.util.Scanner;
 public class Kebersihan_ruang {
     Scanner input = new Scanner(System.in);
