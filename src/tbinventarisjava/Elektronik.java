@@ -14,6 +14,7 @@ public class Elektronik {
     private String StandarPosisi2;
 
     
+    
     boolean AnalisisPosisi;
 
     int getJumlah_barang() {
