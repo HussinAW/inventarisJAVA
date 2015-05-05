@@ -8,6 +8,7 @@ public double average(){
     average = sesuai/41;
     System.out.println("Jumlah rata-rata yang sesuai"+average);
         return average;
+        
     
 }
 }
