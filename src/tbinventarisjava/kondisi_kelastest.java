@@ -4,6 +4,7 @@ public class kondisi_kelastest {
     Kondisi_kelas jay = new Kondisi_kelas();
 
     Scanner input = new Scanner(System.in);
+   
     /*
     public void input(){
         System.out.println("Masukan kondisi lantai: ");
