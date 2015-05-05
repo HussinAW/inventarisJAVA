@@ -1,4 +1,4 @@
-package TBinventarisJAVA;
+package tbinventarisJAVA;
 public class Kipasangin extends Elektronik {
     public void Kipasangin(){
         setStandarJumlah(2);

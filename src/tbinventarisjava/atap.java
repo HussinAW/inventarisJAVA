@@ -1,4 +1,4 @@
-package TBinventarisJAVA;
+package tbinventarisJAVA;
 public class atap extends Kebersihan_ruang{
     public void atap(){  
         System.out.println("atap");

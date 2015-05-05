@@ -1,4 +1,4 @@
-package TBinventarisJAVA;
+package tbinventarisJAVA;
 
 import java.util.Scanner;
 public class Elektronik {
@@ -12,7 +12,6 @@ public class Elektronik {
     String Posisi_barang;
     String StandarPosisi;
     private String StandarPosisi2;
-
     boolean AnalisisPosisi;
 
     int getJumlah_barang() {
