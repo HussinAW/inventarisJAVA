@@ -7,3 +7,7 @@ public class Lantai extends Kebersihan_ruang{
         
     }
 }
+        
+
+
+
