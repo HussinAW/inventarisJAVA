@@ -1,7 +1,9 @@
 package tbinventarisjava;
 public class Pemanggilan {
- public static void main(String[]Args){
-     Isikelas sur = new Isikelas(); //biar ditambah Suryanto . wooooey di teruskan// 
+ 
+    
+    public static void main(String[]Args){
+     /*Isikelas sur = new Isikelas(); //biar ditambah Suryanto . wooooey di teruskan// 
      Tess_isikelas OA = new Tess_isikelas();
        kondisi_kelastest jaya=new kondisi_kelastest();
        
