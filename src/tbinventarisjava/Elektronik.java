@@ -9,30 +9,41 @@ public class Elektronik {
     private int Kondisi_baik;
     private int Standar_baik;
     private boolean Analisis_kondisi;
-    String Posisi_barang;
-    String StandarPosisi;
-    private String StandarPosisi2;
-
-    
+    private String Posisi_barang;
+    private String StandarPosisi;
+    private String StandarPosisi2;  
     boolean AnalisisPosisi;
-
+    
+public Elektronik(int Jumlah_barang, int StandarJumlah, boolean Analisis_jumlah, int KOndisi_baik, int Standar_baik, 
+        boolean Analisis_Kondisi, String Posisi_barang, String StandarPosisi, String StandarPosisi2, boolean AnalisisPosisi){
+ this.Jumlah_barang = Jumlah_barang;
+ this.StandarJumlah = StandarJumlah;
+ this.Analisis_jumlah = Analisis_jumlah;
+ this.Kondisi_baik = KOndisi_baik ;
+ this.Standar_baik = Standar_baik;
+ this.Analisis_kondisi= Analisis_Kondisi;
+ this.Posisi_barang = Posisi_barang;
+ this.StandarPosisi = StandarPosisi;
+ this.StandarPosisi2= StandarPosisi2;
+ this.AnalisisPosisi= AnalisisPosisi;
+}
     int getJumlah_barang() {
         return Jumlah_barang;
     }
-    public void setJumlah_barang(int jumlah_barang) {
-        Jumlah_barang = jumlah_barang;
+    void setJumlah_barang(int jumlah_barang) {
+        this.Jumlah_barang = jumlah_barang;
     }
-    public int getStandarJumlah(){
+    int getStandarJumlah(){
         return StandarJumlah;
     }
-    public void setStandarJumlah(int standarJumlah){
-        StandarJumlah=standarJumlah;
+    void setStandarJumlah(int standarJumlah){
+       this.StandarJumlah=standarJumlah;
     }
     boolean getAnalisis_jumlah(){
         return Analisis_jumlah;
     }
-    public void setAnalisis_jumlah(boolean analisis_jumlah){
-        Analisis_jumlah=analisis_jumlah;
+    void setAnalisis_jumlah(boolean analisis_jumlah){
+        this.Analisis_jumlah=analisis_jumlah;
     }
     boolean Analisis_jumlah(){
         if(getJumlah_barang()>=StandarJumlah){
@@ -46,14 +57,14 @@ public class Elektronik {
     int getKondisi_baik(){
         return Kondisi_baik;
     }    
-    public void setKondisi_baik(int kondisi_baik){
-        Kondisi_baik=kondisi_baik;
+    void setKondisi_baik(int kondisi_baik){
+        this.Kondisi_baik=kondisi_baik;
     }
     int getStandar_baik(){
         return Standar_baik;
     }
-    public void setStandar_baik(int standar_baik){
-        Standar_baik=standar_baik;
+    void setStandar_baik(int standar_baik){
+        this.Standar_baik=standar_baik;
     }
     boolean Analisis_baik(){
         if(Jumlah_barang>=Standar_baik && Standar_baik<=Kondisi_baik && Kondisi_baik<=Jumlah_barang){
