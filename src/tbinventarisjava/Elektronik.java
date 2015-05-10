@@ -12,20 +12,17 @@ public class Elektronik {
     private String Posisi_barang;
     private String StandarPosisi;
     private String StandarPosisi2;  
-    boolean AnalisisPosisi;
+    private boolean AnalisisPosisi;
     
-public Elektronik(int Jumlah_barang, int StandarJumlah, boolean Analisis_jumlah, int KOndisi_baik, int Standar_baik, 
-        boolean Analisis_Kondisi, String Posisi_barang, String StandarPosisi, String StandarPosisi2, boolean AnalisisPosisi){
- this.Jumlah_barang = Jumlah_barang;
- this.StandarJumlah = StandarJumlah;
- this.Analisis_jumlah = Analisis_jumlah;
- this.Kondisi_baik = KOndisi_baik ;
- this.Standar_baik = Standar_baik;
- this.Analisis_kondisi= Analisis_Kondisi;
- this.Posisi_barang = Posisi_barang;
- this.StandarPosisi = StandarPosisi;
- this.StandarPosisi2= StandarPosisi2;
- this.AnalisisPosisi= AnalisisPosisi;
+public Elektronik(int StandarJumlah, boolean Analisis_jumlah, int Standar_baik,boolean Analisis_Kondisi,
+    String StandarPosisi, String StandarPosisi2, boolean AnalisisPosisi){
+    this.StandarJumlah = StandarJumlah;
+    this.Analisis_jumlah = Analisis_jumlah;
+    this.Standar_baik = Standar_baik;
+    this.Analisis_kondisi= Analisis_Kondisi;
+    this.StandarPosisi = StandarPosisi;
+    this.StandarPosisi2 = StandarPosisi2;
+    this.AnalisisPosisi= AnalisisPosisi;
 }
     int getJumlah_barang() {
         return Jumlah_barang;
