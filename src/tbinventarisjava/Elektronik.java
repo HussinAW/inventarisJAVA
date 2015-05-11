@@ -15,7 +15,8 @@ public class Elektronik {
     private boolean AnalisisPosisi;
     
 /*public Elektronik(int Jumlah_barang,int StandarJumlah, boolean Analisis_jumlah, int Kondisi_baik,
-        int Standar_baik,boolean Analisis_Kondisi,String Posisi_barang, String StandarPosisi, String StandarPosisi2, boolean AnalisisPosisi){    
+        int Standar_baik,boolean Analisis_Kondisi,String Posisi_barang, String StandarPosisi, 
+        String StandarPosisi2, boolean AnalisisPosisi){    
     this.Jumlah_barang = Jumlah_barang;
     this.StandarJumlah = StandarJumlah;
     this.Analisis_jumlah = Analisis_jumlah;

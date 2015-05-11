@@ -3,6 +3,7 @@ public class Pemanggilan {
  
     
     public static void main(String[]Args){
+        //Kipasangin OA = new Kipasangin();
      /*Isikelas sur = new Isikelas(); //biar ditambah Suryanto . wooooey di teruskan// 
      Tess_isikelas OA = new Tess_isikelas();
        kondisi_kelastest jaya=new kondisi_kelastest();
