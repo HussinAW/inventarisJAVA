@@ -1,9 +1,6 @@
 package tbinventarisjava;
 public class Steker extends Elektronik {
-public Steker(int Jumlah_barang, int StandarJumlah, boolean Analisis_jumlah){
-super(Jumlah_barang, StandarJumlah, Analisis_jumlah);
-}
-    public void input(){
+public void Steker(){
     setStandarJumlah(4);
     setStandar_baik(4);
     setStandarPosisi("pojok");
