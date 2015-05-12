@@ -1,7 +1,7 @@
 package tbinventarisjava;
 
 import java.util.Scanner;
-public class Elektronik {
+public abstract class  Elektronik {
     Scanner input = new Scanner(System.in);
     private int Jumlah_barang;
     private int StandarJumlah;
@@ -78,11 +78,9 @@ public class Elektronik {
     public String getPosisi_barang() {
         return Posisi_barang;
     }
-
     public void setPosisi_barang(String posisi_barang) {
         Posisi_barang = posisi_barang;
     }
-    
     String getStandarPosisi(){
         return StandarPosisi;
     }
@@ -105,11 +103,37 @@ public class Elektronik {
     }
     boolean getAnalisisPosisi(){
         return AnalisisPosisi;
-    }
-    
+    } 
     public void setAnalisisPosisi(boolean analisisPosisi){
         AnalisisPosisi=analisisPosisi;
     }
+    
+    
+    /*boolean Analisis_jumlah(int Jumlah){
+        this.Jumlah_barang = Jumlah;
+        if(getJumlah_barang()>=StandarJumlah){
+            return Analisis_jumlah=true;
+        }
+        else{
+            return Analisis_jumlah=false;
+        }
+    }
+    boolean Analisis_baik(){
+        if(Jumlah_barang>=Standar_baik && Standar_baik<=Kondisi_baik && Kondisi_baik<=Jumlah_barang){
+            return Analisis_kondisi=true;
+        }
+        else{
+            return Analisis_kondisi=false;
+        }
+    }
+    boolean AnalisisPosisi(){
+        if(Posisi_barang.equalsIgnoreCase(StandarPosisi)){
+            return AnalisisPosisi=true;
+        }
+        else{
+            return AnalisisPosisi=false;
+        }
+    }*/
     
     public void input(){
         System.out.print("Masukan jumlah barang: ");
@@ -118,9 +142,7 @@ public class Elektronik {
         setKondisi_baik(input.nextInt());
         System.out.print("Masukan posisi barang: ");
         setPosisi_barang(input.next());
-        
     }   
-    
     public void show(){
         System.out.println("Jumlah barang: "+getJumlah_barang()+" - "+Analisis_jumlah());
         System.out.println("Kondisi barang baik: "+getKondisi_baik()+" - "+Analisis_baik());
