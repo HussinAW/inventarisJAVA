@@ -5,7 +5,7 @@ package tbinventarisjava;
  * @author nurmasari
  */
 import java.util.Scanner;
-public class Kenyamanan_ruang {
+public abstract class Kenyamanan_ruang {
     Scanner input = new Scanner(System.in);
     private String Kebisingan;
     private boolean Analisis_kebisingan;

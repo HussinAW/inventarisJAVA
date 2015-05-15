@@ -7,7 +7,9 @@ public class Lingkungan_Ruang {
     private int Pencahayaan;
     private boolean Analisis_pencahayaan;
     private int Kelembapan;
+    private boolean Analisis_kelembapan;
     private int Suhu;
+    private boolean Analisis_suhu;
 
     public Scanner getInput() {
         return input;
@@ -57,12 +59,28 @@ public class Lingkungan_Ruang {
         this.Kelembapan = Kelembapan;
     }
 
+    public boolean isAnalisis_kelembapan() {
+        return Analisis_kelembapan;
+    }
+
+    public void setAnalisis_kelembapan(boolean Analisis_kelembapan) {
+        this.Analisis_kelembapan = Analisis_kelembapan;
+    }
+
     public int getSuhu() {
         return Suhu;
     }
 
     public void setSuhu(int Suhu) {
         this.Suhu = Suhu;
+    }
+
+    public boolean isAnalisis_suhu() {
+        return Analisis_suhu;
+    }
+
+    public void setAnalisis_suhu(boolean Analisis_suhu) {
+        this.Analisis_suhu = Analisis_suhu;
     }
     
     
