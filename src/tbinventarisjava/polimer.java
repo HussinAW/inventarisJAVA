@@ -34,6 +34,7 @@ public class polimer {
             System.out.println("tidak sesuai");
         }
     }
+    
     void jumlah(){
         System.out.println("jumlah");
     }
