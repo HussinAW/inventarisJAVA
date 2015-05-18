@@ -2,41 +2,52 @@ package tbinventarisjava;
 import java.util.Scanner;
 public class Kebersihan_ruang {
     Scanner input = new Scanner(System.in);
-    private String Kebersihan;
-    private boolean Analisis_kebersihan;
+    private int Nilai;
+    private int Batas_atas;
+    private int Batas_bawah;
+    boolean Analisis_nilai;
     
-    String getKebersihan(){
-        return Kebersihan;
+    public void setBatas_atas(int batas_atas){
+        Batas_atas=batas_atas;
     }
-    public void setKebersihan(String kebersihan){
-        Kebersihan=kebersihan;
+    int getBatas_atas(){
+        return Batas_atas;
+    }
+    public void setBatas_bawah(int batas_bawah){
+        Batas_bawah=batas_bawah;
+    }
+    int getBatas_bawah(){
+        return Batas_bawah;
     }
     
-    boolean getAnalisis_kebersihan(){
-        return Analisis_kebersihan;
+    public void setNilai(int nilai){
+        Nilai=nilai;
     }
-    public void setAnalisis_kebersihan(boolean analisis_kebersihan){
-        Analisis_kebersihan=analisis_kebersihan;
+    int getNilai(){
+        return Nilai;
     }
     
-    boolean Analisis_kebersihan(){
-        if(getKebersihan().equalsIgnoreCase("bersih")){
-            return Analisis_kebersihan=true;
+    public void setAnalisis_nilai(boolean analisis_nilai){
+        Analisis_nilai=analisis_nilai;
+    }
+    boolean getAnalisis_nilai(){
+        if(Nilai>=Batas_bawah&&Nilai<=Batas_atas){
+            return Analisis_nilai=true;
         }
         else{
-            return Analisis_kebersihan=false;
+            return Analisis_nilai= false;
         }
     }
     
     public void input(){
-        System.out.println("Masukan kebersihan: ");
-        setKebersihan(input.next());
+        System.out.println("Nilai: ");
+        setNilai(input.nextInt());
+        System.out.println("\n");
+    }
+    public void show(){
+        System.out.println("Nilai: "+getNilai());
+        System.out.println("Analisis nilai: "+getAnalisis_nilai());
+        System.out.println("----------------------------------------------------");
     }
     
-    public void show(){
-        
-        System.out.println("Kebersihan: "+getKebersihan());
-        System.out.println("Analisis kebersihan: "+Analisis_kebersihan());
-    }
 }
-

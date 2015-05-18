@@ -1,5 +1,5 @@
 package tbinventarisjava;
-public class dinding extends Kebersihan_ruang{
+public class dinding extends Lingkungan_ruang{
     public void dinding(){  
         System.out.println("dinding");
         input();
