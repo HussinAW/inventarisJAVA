@@ -22,7 +22,8 @@ public double AC_sesuai = 0.0;
 public double internet_sesuai = 0.0;
 public double cctv_sesuai = 0.0;
 public void input()
-{    
+{ 
+    
     System.out.println("Masukkan jumlah steker: ");
     elektronik.setJumlah_steker(input.nextInt());
     System.out.println("Masukkan jumlah kondisi baik steker: ");
