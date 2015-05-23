@@ -1,5 +1,4 @@
 package tbinventarisjava;
-import java.util.Scanner;
 /**
  *
  * @author nurmasari
