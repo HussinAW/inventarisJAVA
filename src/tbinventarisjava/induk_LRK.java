@@ -11,8 +11,8 @@ package tbinventarisjava;
  */
 
 public abstract class induk_LRK {
- public abstract double Analisiskebersihanlantai();
- public abstract double Analisiskebersihandinding();
+public abstract double Analisiskebersihanlantai();
+public abstract double Analisiskebersihandinding();
 public abstract double Analisiskebersihanatap();
 public abstract double Analisiskebersihanpintu();
 public abstract double Analisiskebersihanjendela();
