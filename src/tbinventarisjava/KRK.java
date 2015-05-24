@@ -34,45 +34,35 @@ public void input(){
     if(nyaman.getKebisingan().equals("tidakbising")){
       sesuai++;  
     } 
-    else{
-        
+    else{        
     }
-
-
 
     if(nyaman.getBau().equals("tidakbau")){
      sesuai++;   
     }
     else{
-        
     }
- 
 
     if(nyaman.getKebocoran().equals("tidakbocor")){
     sesuai++;    
     }
     else{
-        
     }
-
-    
 
     if(nyaman.getKerusakan().equals("tidakrusak")){
     sesuai++;  
     }
-    else{
-        
+    else{   
     }
-
-
+    
     if(nyaman.getKeausan().equals("tidakaus")){
         sesuai++;
     }
-    else{
-        
+    else{    
     }
+    
+    
     return sesuai;
-  
     }
 
     @Override
