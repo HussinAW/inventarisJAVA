@@ -31,6 +31,7 @@ private int bandwith;
 private int jumlah_cctv;
 private int kondisi_cctv;
 private String posisi_cctv;
+public double sesuai=0.0;
 
     public String getKondisi_ac() {
         return kondisi_ac;
@@ -193,4 +194,55 @@ public String getKondisi_lcd() {
         this.kondisi_cctv = kondisi_cctv;
     }
 
+    public double Analisis(int jumlah_max,int jumlah, int kondisi,double sesuai, String posisi) {
+        this.sesuai = sesuai;  
+        if(jumlah>=jumlah_max){
+            this.sesuai++; 
+    }
+        else{
+            
+        }
+        if(kondisi>=4){
+            this.sesuai++;
+        }
+        else{
+            
+        }
+    if(posisi.equals("dekat_dosen")|| posisi.equals("pojok")){
+        this.sesuai++;
+    }
+    else{
+        
+    }
+     System.out.println("========================================================================/n");
+
+    return this.sesuai;
+    }
+
+    
+    public double Analisis(int jumlah_max,int jumlah, String kondisi, String posisi_dktdosen, double sesuai) {
+      // averloading method sama parameter beda
+        this.sesuai = sesuai;
+     if(jumlah_max>=jumlah){
+        this.sesuai++;
+     }
+     else{
+         
+     }
+     if(kondisi.equals("berfungsi")){
+         this.sesuai++;
+     }
+     else{
+         
+     }
+     if(posisi_dktdosen.equals("dekatdosen")){
+         this.sesuai++;
+     }
+     else{
+         
+     }
+     return this.sesuai;
+     
+    
+    }  
 }

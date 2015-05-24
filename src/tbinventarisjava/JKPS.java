@@ -73,59 +73,15 @@ public void input()
     elektronik.setPosisi_cctv(input.next());
     System.out.println("========================================================================/n");
 }
-
-    @Override
-    public double AnalisisSteker() {
-          if(elektronik.getJumlah_steker()>=4){
-            steker_sesuai++; 
-    }
-        else{
-            
-        }
-        if(elektronik.getKondisi_steker()==4){
-            steker_sesuai++;
-        }
-        else{
-            
-        }
-    if(elektronik.getPosisi_steker().equals("pojok")&& elektronik.getPosisi_steker().equals("dekatdosen")){
-        steker_sesuai++;
-    }
-    else{
-        
-    }
-     System.out.println("========================================================================/n");
-
-    return steker_sesuai;
-    }
-
-    @Override
-    public double AnalisisLCD() {
-          
-     if(elektronik.getJumlah_lcd()>=1){
-         lcd_sesuai++;
-     }
-     else{
-         
-     }
-     if(elektronik.getKondisi_lcd().equals("berfungsi")){
-         lcd_sesuai++;
-     }
-     else{
-         
-     }
-     if(elektronik.getPosisi_lcd().equals("dekatdosen")){
-         lcd_sesuai++;
-     }
-     else{
-         
-     }
-     return lcd_sesuai;
-     
+    public void Analisis(){
+    elektronik.Analisis(4,elektronik.getJumlah_steker(), elektronik.getKondisi_steker(),0.0, elektronik.getPosisi_steker());    
     
-    }  
+    }
+    
+   
 
-    @Override
+    
+@Override
     public double AnalisisLampu() {
     if(elektronik.getJumlah_lampu()>=18){
          lampu_sesuai++;
