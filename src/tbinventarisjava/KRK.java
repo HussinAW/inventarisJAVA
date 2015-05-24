@@ -13,11 +13,7 @@ import java.util.Scanner;
 public class KRK extends super_abstrack{
 Scanner input = new Scanner(System.in);
 public Kenyamanan_Ruang_Kelas nyaman = new Kenyamanan_Ruang_Kelas();
-public double kebisingan_tidakbising = 0.0;
-public double bau_tidakbau= 0.0;
-public double bocor_tidakbocor = 0.0;
-public double rusak_tidakrusak = 0.0;
-public double aus_tidakaus = 0.0;
+public double sesuai=0.0;
 public void input(){
     System.out.println("Masukkan bising atau tidak Ruang kelas : ");
     nyaman.setKebisingan(input.next());
@@ -30,59 +26,57 @@ public void input(){
     System.out.println("Masukkan aus atau tidak Ruang kelas : ");
     nyaman.setKeausan(input.next());
 }
-@Override
-        public double Analisiskebisingan() {
+
+   
+
+    @Override
+    public double Analisis() {
     if(nyaman.getKebisingan().equals("tidakbising")){
-      kebisingan_tidakbising++;  
+      sesuai++;  
     } 
     else{
         
     }
-    return kebisingan_tidakbising;
-    }
-@Override
-public double Analisisbau(){
+
+
+
     if(nyaman.getBau().equals("tidakbau")){
-     bau_tidakbau++;   
+     sesuai++;   
     }
     else{
         
     }
-    return bau_tidakbau;
-}
-@Override
-public double Analisiskebocoran(){
+ 
+
     if(nyaman.getKebocoran().equals("tidakbocor")){
-    bocor_tidakbocor++;    
+    sesuai++;    
     }
     else{
         
     }
-    return bocor_tidakbocor;
+
     
-}
-@Override
-public double Analisiskerusakan(){
+
     if(nyaman.getKerusakan().equals("tidakrusak")){
-    rusak_tidakrusak++;  
+    sesuai++;  
     }
     else{
         
     }
-    return rusak_tidakrusak;
-}
-@Override
-public double Analisiskeausan(){
+
+
     if(nyaman.getKeausan().equals("tidakaus")){
-        aus_tidakaus++;
+        sesuai++;
     }
     else{
         
     }
-    return aus_tidakaus;
-}
+    return sesuai;
+  
+    }
+
     @Override
-    public void tampil() {
+    public double tampil() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
