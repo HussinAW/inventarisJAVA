@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author nurmasari
  */
-public abstract class KRK extends induk_JKPS{
+public class KRK extends super_abstrack{
 Scanner input = new Scanner(System.in);
 public Kenyamanan_Ruang_Kelas nyaman = new Kenyamanan_Ruang_Kelas();
 public double kebisingan_tidakbising = 0.0;

@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author nurmasari
  */
-public abstract class JKPS extends induk_JKPS {
+public class JKPS extends super_abstrack {
 Scanner input = new Scanner (System.in);
 public Jumlah_Kondisi_Posisisarana elektronik = new Jumlah_Kondisi_Posisisarana();
 public double steker_sesuai=0.0;
@@ -16,6 +16,7 @@ public double kipasangin_sesuai= 0.0;
 public double AC_sesuai = 0.0;
 public double internet_sesuai = 0.0;
 public double cctv_sesuai = 0.0;
+
 public void input()
 { 
     
@@ -73,16 +74,18 @@ public void input()
     elektronik.setPosisi_cctv(input.next());
     System.out.println("========================================================================/n");
 }
-    public void Analisis(){
+
+@Override
+    public double Analisis(){
     elektronik.Analisis(4,elektronik.getJumlah_steker(), elektronik.getKondisi_steker(),0.0, elektronik.getPosisi_steker());    
     elektronik.Analisis(1,elektronik.getJumlah_lcd(), elektronik.getKondisi_lcd(), elektronik.getPosisi_lcd(),0.0);
     elektronik.Analisis(18,elektronik.getJumlah_lampu(), elektronik.getKondisi_lampu(), 0.0, elektronik.getPosisi_lampu());
     elektronik.Analisis(2,elektronik.getJumlah_kipasangin(),elektronik.getKondisi_kipasangin(), 0.0, elektronik.getPosisi_kipasangin());
     elektronik.Analisis(1,elektronik.getJumlah_ac(), elektronik.getKondisi_ac(), elektronik.getPosisi_ac(),0.0);
     elektronik.Analisis(2,elektronik.getJumlah_cctv(),elektronik.getKondisi_cctv(),0.0,elektronik.getPosisi_cctv());
+    return 0;
     }
-    @Override
-    public double AnalisisInternet() {
+        public double AnalisisInternet() {
         if(elektronik.getSSID().equals("UMMHOTSPOT")){
             internet_sesuai++;
         }
@@ -99,8 +102,8 @@ public void input()
         return internet_sesuai++;
     }
 
-@Override
-    public void tampil(){
+    @Override
+    public double tampil() {
         System.out.println("Jumlah steker: "+ elektronik.getJumlah_steker());
         System.out.println("Jumlah kondisi baik Steker : "+ elektronik.getKondisi_steker());
         System.out.println("Posisi steker berada : "+ elektronik.getPosisi_steker());
@@ -129,5 +132,8 @@ public void input()
         System.out.println("Posisi CCTV berada: "+elektronik.getPosisi_cctv());
         System.out.println("========================================================================/n");
 
+    return 0;
     }
+    
+
 }
