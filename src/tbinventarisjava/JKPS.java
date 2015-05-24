@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author nurmasari
  */
-public class JKPS extends induk_JKPS {
+public abstract class JKPS extends induk_JKPS {
 Scanner input = new Scanner (System.in);
 public Jumlah_Kondisi_Posisisarana elektronik = new Jumlah_Kondisi_Posisisarana();
 public double steker_sesuai=0.0;
