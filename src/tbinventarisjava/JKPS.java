@@ -75,86 +75,12 @@ public void input()
 }
     public void Analisis(){
     elektronik.Analisis(4,elektronik.getJumlah_steker(), elektronik.getKondisi_steker(),0.0, elektronik.getPosisi_steker());    
-    
+    elektronik.Analisis(1,elektronik.getJumlah_lcd(), elektronik.getKondisi_lcd(), elektronik.getPosisi_lcd(),0.0);
+    elektronik.Analisis(18,elektronik.getJumlah_lampu(), elektronik.getKondisi_lampu(), 0.0, elektronik.getPosisi_lampu());
+    elektronik.Analisis(2,elektronik.getJumlah_kipasangin(),elektronik.getKondisi_kipasangin(), 0.0, elektronik.getPosisi_kipasangin());
+    elektronik.Analisis(1,elektronik.getJumlah_ac(), elektronik.getKondisi_ac(), elektronik.getPosisi_ac(),0.0);
+    elektronik.Analisis(2,elektronik.getJumlah_cctv(),elektronik.getKondisi_cctv(),0.0,elektronik.getPosisi_cctv());
     }
-    
-   
-
-    
-@Override
-    public double AnalisisLampu() {
-    if(elektronik.getJumlah_lampu()>=18){
-         lampu_sesuai++;
-     }
-     else{
-         
-     }
-     if(elektronik.getKondisi_lampu()==18){
-         lampu_sesuai++;
-     }
-     else{
-         
-     }
-     if(elektronik.getPosisi_lampu().equals("atap")){
-         lampu_sesuai++;
-     }
-     else{
-         
-     }
-     System.out.println("========================================================================/n");
-    return lampu_sesuai;    
-    }
-
-    @Override
-    public double AnalisisKipasangin() {
-    if(elektronik.getJumlah_kipasangin()>=2){
-        kipasangin_sesuai++;
-    }
-    else{
-        
-    }
-    if(elektronik.getKondisi_kipasangin()==2){
-        kipasangin_sesuai++;
-    }
-    else{
-        
-    }
-    if(elektronik.getPosisi_kipasangin().equals("atap")){
-        kipasangin_sesuai++;
-    }
-    else{
-        
-    }
-    System.out.println("========================================================================/n");
-    return kipasangin_sesuai;
-    
-    
-    }
-
-    @Override
-    public double AnalisisAC() {
-        if(elektronik.getJumlah_ac()>=1){
-            AC_sesuai++;
-        }
-        else{
-            
-        }
-        if(elektronik.getKondisi_ac().equals("baik")){
-            AC_sesuai++;
-        }
-        else{
-            
-        }
-        if(elektronik.getPosisi_ac().equals("belakang")&& elektronik.getPosisi_ac().equals("samping")){
-            AC_sesuai++;
-        }
-        else{
-            
-        }
-        System.out.println("========================================================================/n");
-        return AC_sesuai++;
-    }
-
     @Override
     public double AnalisisInternet() {
         if(elektronik.getSSID().equals("UMMHOTSPOT")){
@@ -173,29 +99,6 @@ public void input()
         return internet_sesuai++;
     }
 
-    @Override
-    public double Analisiscctv() {
-        if(elektronik.getJumlah_cctv()==2){
-            cctv_sesuai++;
-        }
-        else{
-            
-        }
-        if(elektronik.getKondisi_cctv()==2){
-            cctv_sesuai++;
-        }
-        else{
-            
-        }
-        if(elektronik.getPosisi_cctv().equals("depan")&& elektronik.getPosisi_cctv().equals("belakang")){
-            cctv_sesuai++;
-        }
-        else{
-            
-        }
-         System.out.println("========================================================================/n");
-        return cctv_sesuai++;
-    }
 @Override
     public void tampil(){
         System.out.println("Jumlah steker: "+ elektronik.getJumlah_steker());

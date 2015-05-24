@@ -220,7 +220,7 @@ public String getKondisi_lcd() {
     }
 
     
-    public double Analisis(int jumlah_max,int jumlah, String kondisi, String posisi_dktdosen, double sesuai) {
+    public double Analisis(int jumlah_max,int jumlah, String kondisi, String posisi, double sesuai) {
       // averloading method sama parameter beda
         this.sesuai = sesuai;
      if(jumlah_max>=jumlah){
@@ -232,17 +232,31 @@ public String getKondisi_lcd() {
      if(kondisi.equals("berfungsi")){
          this.sesuai++;
      }
+     else if(kondisi.equals("baik")){
+        this.sesuai++;  
+     }
+    
      else{
          
      }
-     if(posisi_dktdosen.equals("dekatdosen")){
+     if(posisi.equals("dekatdosen")){
+         this.sesuai++;
+     }
+     else if(posisi.equals("atap")){
+         this.sesuai++;    
+     }
+     else if(posisi.equals("belakang")){
+         this.sesuai++;
+     }
+     else if(posisi.equals("samping")){
+         this.sesuai++;
+     }
+     else if(posisi.equals("depan")){
          this.sesuai++;
      }
      else{
          
      }
      return this.sesuai;
-     
-    
     }  
 }
