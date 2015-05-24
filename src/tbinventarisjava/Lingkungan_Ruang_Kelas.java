@@ -1,24 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tbinventarisjava;
 
-/**
- *
- * @author hussin agung wijaya
- */
-public class Lingkungan_Ruang_Kelas {
+public  class Lingkungan_Ruang_Kelas {
     private String kondisi_lantai;
     private String kondisi_dinding;
     private String kondisi_atap;
     private String kondisi_pintu;
     private String kondisi_jendela;
+    public double sesuai=0.0;
 
-    /**
-     * @return the kondisi_lantai
-     */
     public String getKondisi_lantai() {
         return kondisi_lantai;
     }
@@ -86,5 +76,5 @@ public class Lingkungan_Ruang_Kelas {
     public void setKondisi_jendela(String kondisi_jendela) {
         this.kondisi_jendela = kondisi_jendela;
     }
+
 }
- 
