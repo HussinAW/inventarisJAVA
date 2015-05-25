@@ -9,6 +9,7 @@ public class Pemanggilan {
        kondisi_kelastest jaya=new kondisi_kelastest();
        
        
+        
        
       /* OA.analisis_kelistrikan();
        OA.analisis_LCD();
