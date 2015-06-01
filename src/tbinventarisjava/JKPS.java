@@ -1,5 +1,6 @@
 
 package tbinventarisjava;
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -85,7 +86,7 @@ public void input()
     elektronik.Analisis(2,elektronik.getJumlah_cctv(),elektronik.getKondisi_cctv(),0.0,elektronik.getPosisi_cctv());
     return 0;
     }
-        public double AnalisisInternet() {
+    public double AnalisisInternet() {
         if(elektronik.getSSID().equals("UMMHOTSPOT")){
             internet_sesuai++;
         }
@@ -101,7 +102,35 @@ public void input()
         System.out.println("========================================================================/n");
         return internet_sesuai++;
     }
+    public void simpan(){
+        try{
+            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            Writer.write("jumlah steker = "+elektronik.getJumlah_steker()+"\t");
+            Writer.write("kondisi steker = "+elektronik.getKondisi_steker()+"\t");
+            Writer.write("posisi steker = "+elektronik.getPosisi_steker()+"\t");
+            Writer.write("jumlah LCD = "+elektronik.getJumlah_lcd()+"\t");
+            Writer.write("kondisi LCD = "+elektronik.getKondisi_lcd()+"\t");
+            Writer.write("posisi LCD = "+elektronik.getPosisi_lcd()+"\t");
+            Writer.write("jumlah lampu  = "+elektronik.getJumlah_lampu()+"\t");
+             Writer.write("kondisi lampu = "+elektronik.getKondisi_lampu()+"\t");
+              Writer.write("posisi lampu = "+elektronik.getPosisi_lampu()+"\t");
+             Writer.write("jumlah kipas angin = "+elektronik.getJumlah_kipasangin()+"\t");
+              Writer.write("kondisi kipas angin = "+elektronik.getKondisi_kipasangin()+"\t");
+             Writer.write("posisi kipas angin = "+elektronik.getPosisi_kipasangin()+"\t");
+              Writer.write("jumlah AC= "+elektronik.getJumlah_ac()+"\t");
+               Writer.write("kondisi AC = "+elektronik.getKondisi_ac()+"\t");
+                Writer.write("posisi AC = "+elektronik.getPosisi_ac()+"\t");
+                 Writer.write(" SSID= "+elektronik.getSSID()+"\t");
+                  Writer.write("bandwith = "+elektronik.getBandwith()+"\t");
+                   Writer.write("jumlah CCTV = "+elektronik.getJumlah_cctv()+"\t");
+                    Writer.write("kondisi CCTV = "+elektronik.getKondisi_cctv()+"\t");
+                     Writer.write("posisi CCTV = "+elektronik.getPosisi_cctv()+"\t");
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
 
+        }
+    }
     @Override
     public double tampil() {
         System.out.println("Jumlah steker: "+ elektronik.getJumlah_steker());
