@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author nurmasari
  */
-public class luas_ruang extends super_abstrack  implements interface_kondisi_ruang_kelas {
+public class luas_ruang  implements interface_kondisi_ruang_kelas {
     private int panjang;
     private int lebar;
     private int jumlah_kursi;
@@ -34,14 +34,6 @@ this.luas = (int) luas;
         return jumlah_kursi/luas;
     }
 
-    @Override
-    public double Analisis() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public double tampil() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
     
 }

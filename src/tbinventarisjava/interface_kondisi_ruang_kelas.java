@@ -12,6 +12,6 @@ package tbinventarisjava;
  */
 public interface interface_kondisi_ruang_kelas {
     static final String Sesuai = "Kondisi_ruang_kelas";
-    public abstract double HitungLuas();
-    public abstract double HitungRasio();
+    public  double HitungLuas();
+    public  double HitungRasio();
 }
