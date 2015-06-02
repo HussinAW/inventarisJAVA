@@ -3,6 +3,10 @@ public class Pemanggilan {
  
     
     public static void main(String[]Args){
+        
+        super_abstrack jay = new JKPS();
+        jay.tampil();
+        
         //Kipasangin OA = new Kipasangin();
      /*Isikelas sur = new Isikelas(); //biar ditambah Suryanto . wooooey di teruskan// 
      Tess_isikelas OA = new Tess_isikelas();
