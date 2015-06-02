@@ -61,5 +61,6 @@ public double sesuai=0.0;
      System.out.println("Masukkan kondisi keamanan: ");
     keamanan.setKeamanan(input.next());
     System.out.println("========================================================================/n");
+    return 0;
 }
 }
