@@ -23,8 +23,5 @@ this.luas = (int) luas;
     @Override
     public double HitungRasio() {
         return jumlah_kursi/luas;
-    }
-
-   
-    
+    }   
 }

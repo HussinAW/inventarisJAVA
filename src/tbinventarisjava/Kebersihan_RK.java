@@ -69,6 +69,19 @@ public class Kebersihan_RK extends super_abstrack {
         return sesuai;
 
     }
+    public void simpan(){
+        try{
+            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            Writer.write("Sirkulasi udara = "+clean.getSirkulasi_udara()+"\t");
+            Writer.write("Pencahayaan = "+clean.getPencahayaan()+"\t");
+            Writer.write("Kelembapan  = "+clean.getKelembapan()+"\t");
+            Writer.write("Suhu = "+clean.getSuhu()+"\t");
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+
+        }
+    }
     @Override
     public double tampil() {
          System.out.println("kondisi sirkulasi udara : "+ clean.getSirkulasi_udara());

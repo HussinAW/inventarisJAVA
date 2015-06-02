@@ -14,7 +14,6 @@ public interface interface_kondisi_ruang_kelas {
     static final String Sesuai = "Kondisi_ruang_kelas";
     public  double HitungLuas();
     public  double HitungRasio();
-    public double input();
-    public double tampil();
+   
     
 }
