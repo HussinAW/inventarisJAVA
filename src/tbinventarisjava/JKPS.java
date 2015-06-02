@@ -18,63 +18,9 @@ public double AC_sesuai = 0.0;
 public double internet_sesuai = 0.0;
 public double cctv_sesuai = 0.0;
 
-public void input()
-{ 
+
     
-    System.out.println("Masukkan jumlah steker: ");
-    elektronik.setJumlah_steker(input.nextInt());
-    System.out.println("Masukkan jumlah kondisi baik steker: ");
-    elektronik.setKondisi_steker(input.nextInt());
-    System.out.println("Masukkan posisi steker: ");
-    elektronik.setPosisi_steker(input.next());
-    System.out.println("========================================================================/n");
-    
-    System.out.println("Masukkan jumlah kabel LCD: ");
-    elektronik.setJumlah_lcd(input.nextInt());
-    System.out.println("Masukkan jumlah kondisi baik kabel LCD: ");
-    elektronik.setKondisi_lcd(input.next());
-    System.out.println("Masukkan posisi kabel LCD: ");
-    elektronik.setPosisi_lcd(input.next());
-    System.out.println("========================================================================/n");
-    
-    System.out.println("Masukkan jumlah lampu: ");
-    elektronik.setJumlah_lampu(input.nextInt());
-    System.out.println("Masukkan jumlah kondisi baik lampu: ");
-    elektronik.setKondisi_lampu(input.nextInt());
-    System.out.println("Masukkan posisi lampu: ");
-    elektronik.setPosisi_lampu(input.next());
-    System.out.println("========================================================================/n");
-    
-    System.out.println("Masukkan jumlah kipas angin: ");
-    elektronik.setJumlah_kipasangin(input.nextInt());
-    System.out.println("Masukkan jumlah kondisi kipas angin: ");
-    elektronik.setKondisi_kipasangin(input.nextInt());
-    System.out.println("Masukkan posisi kipas angin: ");
-    elektronik.setPosisi_kipasangin(input.next());
-    System.out.println("========================================================================/n");
-    
-    System.out.println("Masukkan jumlah AC: ");
-    elektronik.setJumlah_ac(input.nextInt());
-    System.out.println("Masukkan jumlah kondisi AC: ");
-    elektronik.setKondisi_ac(input.next());
-    System.out.println("Masukkan posisi AC: ");
-    elektronik.setPosisi_ac(input.next());
-    System.out.println("========================================================================/n");
-    
-    System.out.println("Masukkan SSID: ");
-    elektronik.setSSID(input.next());
-    System.out.println("Masukkan bandwith: ");
-    elektronik.setBandwith(input.nextInt());
-    System.out.println("========================================================================/n");
-    
-    System.out.println("Masukkan jumlah CCTV: ");
-    elektronik.setJumlah_cctv(input.nextInt());
-    System.out.println("Masukkan jumlah kondisi CCTV: ");
-    elektronik.setKondisi_cctv(input.nextInt());
-    System.out.println("Masukkan posisi CCTV: ");
-    elektronik.setPosisi_cctv(input.next());
-    System.out.println("========================================================================/n");
-}
+
 
 @Override
     public double Analisis(){
@@ -163,6 +109,62 @@ public void input()
 
     return 0;
     }
-    
 
+    @Override
+    public double input() {
+           System.out.println("Masukkan jumlah steker: ");
+    elektronik.setJumlah_steker(input.nextInt());
+    System.out.println("Masukkan jumlah kondisi baik steker: ");
+    elektronik.setKondisi_steker(input.nextInt());
+    System.out.println("Masukkan posisi steker: ");
+    elektronik.setPosisi_steker(input.next());
+    System.out.println("========================================================================/n");
+    
+    System.out.println("Masukkan jumlah kabel LCD: ");
+    elektronik.setJumlah_lcd(input.nextInt());
+    System.out.println("Masukkan jumlah kondisi baik kabel LCD: ");
+    elektronik.setKondisi_lcd(input.next());
+    System.out.println("Masukkan posisi kabel LCD: ");
+    elektronik.setPosisi_lcd(input.next());
+    System.out.println("========================================================================/n");
+    
+    System.out.println("Masukkan jumlah lampu: ");
+    elektronik.setJumlah_lampu(input.nextInt());
+    System.out.println("Masukkan jumlah kondisi baik lampu: ");
+    elektronik.setKondisi_lampu(input.nextInt());
+    System.out.println("Masukkan posisi lampu: ");
+    elektronik.setPosisi_lampu(input.next());
+    System.out.println("========================================================================/n");
+    
+    System.out.println("Masukkan jumlah kipas angin: ");
+    elektronik.setJumlah_kipasangin(input.nextInt());
+    System.out.println("Masukkan jumlah kondisi kipas angin: ");
+    elektronik.setKondisi_kipasangin(input.nextInt());
+    System.out.println("Masukkan posisi kipas angin: ");
+    elektronik.setPosisi_kipasangin(input.next());
+    System.out.println("========================================================================/n");
+    
+    System.out.println("Masukkan jumlah AC: ");
+    elektronik.setJumlah_ac(input.nextInt());
+    System.out.println("Masukkan jumlah kondisi AC: ");
+    elektronik.setKondisi_ac(input.next());
+    System.out.println("Masukkan posisi AC: ");
+    elektronik.setPosisi_ac(input.next());
+    System.out.println("========================================================================/n");
+    
+    System.out.println("Masukkan SSID: ");
+    elektronik.setSSID(input.next());
+    System.out.println("Masukkan bandwith: ");
+    elektronik.setBandwith(input.nextInt());
+    System.out.println("========================================================================/n");
+    
+    System.out.println("Masukkan jumlah CCTV: ");
+    elektronik.setJumlah_cctv(input.nextInt());
+    System.out.println("Masukkan jumlah kondisi CCTV: ");
+    elektronik.setKondisi_cctv(input.nextInt());
+    System.out.println("Masukkan posisi CCTV: ");
+    elektronik.setPosisi_cctv(input.next());
+    System.out.println("========================================================================/n");
+    return 0;
+}
 }
