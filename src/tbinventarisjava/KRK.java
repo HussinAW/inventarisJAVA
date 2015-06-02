@@ -5,6 +5,7 @@
  */
 
 package tbinventarisjava;
+import java.io.*;
 import java.util.Scanner;
 /**
  *
@@ -58,6 +59,20 @@ public double sesuai=0.0;
     @Override
     public double tampil() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public void simpan(){
+        try{
+            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            Writer.write("Kebisingan = "+nyaman.getKebisingan()+"\t");
+            Writer.write("Bau = "+nyaman.getBau()+"\t");
+            Writer.write("Kebocoran = "+nyaman.getKebocoran()+"\t");
+            Writer.write("Kerusakan = "+nyaman.getKerusakan()+"\t");
+            Writer.write("Keausan = "+nyaman.getKeausan()+"\t");
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+
+        }
     }
 
     @Override

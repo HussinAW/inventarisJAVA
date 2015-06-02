@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package tbinventarisjava;
-
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -45,6 +45,18 @@ public double sesuai=0.0;
     @Override
     public double tampil() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public void simpan(){
+        try{
+            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            Writer.write("Kekokohan = "+keamanan.getKekokohan()+"\t");
+            Writer.write("Kunci = "+keamanan.getKunci()+"\t");
+            Writer.write("Keamanan = "+keamanan.getKeamanan()+"\t");
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+
+        }
     }
 
     @Override
