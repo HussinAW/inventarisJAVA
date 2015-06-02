@@ -112,7 +112,7 @@ public double cctv_sesuai = 0.0;
 
     @Override
     public double input() {
-           System.out.println("Masukkan jumlah steker: ");
+    System.out.println("Masukkan jumlah steker: ");
     elektronik.setJumlah_steker(input.nextInt());
     System.out.println("Masukkan jumlah kondisi baik steker: ");
     elektronik.setKondisi_steker(input.nextInt());
