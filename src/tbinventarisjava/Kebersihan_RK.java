@@ -36,24 +36,57 @@ public class Kebersihan_RK extends super_abstrack {
     public double Analisis() {
         
         
-      /* if(KebersihanKelas.getSirkulasiUdara() == 1){
-            System.out.println("Sirkulasi Udara Di ruangan Lancar Sesuai");
-            Kebersihan_Sesuai++;
-        }else if(KebersihanKelas.getSirkulasiUdara() == 2){
-            System.out.println("Sirkulasi Udara Di ruangan Tidak Lancar");
-        }
-        
-        if(KebersihanKelas.getnilaiPencahayaan() >= 250 && KebersihanKelas.getnilaiPencahayaan() <=350){
-            System.out.println("Nilai Pencahayaan Ruangan \t = "+KebersihanKelas.getnilaiPencahayaan()+" Sesuai");
-            Kebersihan_Sesuai++;
-        }else{
-            System.out.println("Nilai Pencahayaan Ruangan \t = "+KebersihanKelas.getnilaiPencahayaan());
-        }*/
+         if(clean.getSirkulasi_udara().equals("lancar")){
+         sesuai++;
+     }
+     else{
+         
+     }   
+            if(clean.getPencahayaan()<= 350 && clean.getPencahayaan()>=250){
+         sesuai++;
+     }
+     else{
+         
+     }   
+            if(clean.getKelembapan()<=80 && clean.getKelembapan()>=70){
+        return sesuai;
     }
+            else{
+                
+            }
+            if(clean.getKelembapan()<=80 && clean.getKelembapan()>=70){
+        return sesuai;
+    }
+            else{
+                
+            }if(clean.getSuhu()<=35 && clean.getSuhu()>=25){
+        return sesuai;
+    }
+            else{
+                
+            }
+            
+        return sesuai;
 
-    
+    }
     @Override
     public double tampil() {
+         System.out.println("kondisi sirkulasi udara : "+ clean.getSirkulasi_udara());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi cahaya: "+ clean.getPencahayaan());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi kelembapan : "+clean.getKelembapan());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi suuhu : "+clean.getSuhu());
+        
+        System.out.println("========================================================================/n");System.out.println("kondisi kelembapan : "+clean.getKelembapan());
+        
+
+        
+        return sesuai;
         
     }
     
