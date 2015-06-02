@@ -1,20 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package tbinventarisjava;
-import java.util.Scanner;
-/**
- *
- * @author nurmasari
- */
+
+
 public class luas_ruang  implements interface_kondisi_ruang_kelas {
-    private int panjang;
-    private int lebar;
-    private int jumlah_kursi;
-    private int luas;
+    private final int panjang;
+    private final int lebar;
+    private final int jumlah_kursi;
+    private final int luas;
     public String getSesuai(){
         return Sesuai;
     }
