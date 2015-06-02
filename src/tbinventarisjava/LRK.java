@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package tbinventarisjava;
-
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -87,6 +87,20 @@ public double sesuai=0.0;
  
 
      }
+    public void simpan(){
+        try{
+            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            Writer.write("Kondisi lantai = "+kebersihan.getKondisi_lantai()+"\t");
+            Writer.write("Kondisi dinding = "+kebersihan.getKondisi_dinding()+"\t");
+            Writer.write("Kondisi atap = "+kebersihan.getKondisi_atap()+"\t");
+            Writer.write("Kondisi pintu = "+kebersihan.getKondisi_pintu()+"\t");
+            Writer.write("Kondisi jendela = "+kebersihan.getKondisi_jendela()+"\t");
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+
+        }
+    }
 
     @Override
     public double tampil() {
