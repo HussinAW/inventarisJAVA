@@ -17,8 +17,13 @@ public Lingkungan_Ruang_Kelas kebersihan = new Lingkungan_Ruang_Kelas();
 public double sesuai=0.0;
 
 
-public void input(){
-    System.out.println("Masukkan kondisi lantai: ");
+
+
+
+
+    @Override
+    public double input() {
+           System.out.println("Masukkan kondisi lantai: ");
     kebersihan.setKondisi_lantai(input.next());
     System.out.println("========================================================================/n");
     
@@ -37,8 +42,10 @@ public void input(){
      System.out.println("Masukkan kondisi jendela: ");
     kebersihan.setKondisi_jendela(input.next());
     System.out.println("========================================================================/n");
-}
+    return 0;
 
+
+    }
     @Override
     public double Analisis() {
          if(kebersihan.getKondisi_lantai().equals("bersih")){
@@ -85,6 +92,8 @@ public void input(){
     public double tampil() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+   
 
   }
 
