@@ -21,12 +21,12 @@ public class Pemanggilan {
         super_abstrack keamanan= new Keamanan_R_K();
         keamanan.input();
         Keamanan_R_K aj = new Keamanan_R_K();
-        
-        
-        
-        
-        
         aj.simpan();
+        
+        
+        
+        
+        
         as.tampil();
         super_abstrack jay = new JKPS();
         jay.tampil();
