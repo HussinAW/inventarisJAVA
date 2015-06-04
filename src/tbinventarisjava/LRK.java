@@ -95,6 +95,7 @@ public double sesuai=0.0;
             Writer.write("Kondisi atap = "+kebersihan.getKondisi_atap()+"\t");
             Writer.write("Kondisi pintu = "+kebersihan.getKondisi_pintu()+"\t");
             Writer.write("Kondisi jendela = "+kebersihan.getKondisi_jendela()+"\t");
+            Writer.close();
         }
         catch(IOException ex){
             ex.printStackTrace();
