@@ -36,6 +36,6 @@ public class Pemanggilan {
         ndi.tampil();
         super_abstrack an = new Keamanan_R_K();
         an.tampil();
-     
+ 
  }
 }
