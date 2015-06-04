@@ -68,6 +68,7 @@ public double sesuai=0.0;
             Writer.write("Kebocoran = "+nyaman.getKebocoran()+"\t");
             Writer.write("Kerusakan = "+nyaman.getKerusakan()+"\t");
             Writer.write("Keausan = "+nyaman.getKeausan()+"\t");
+            Writer.close();
         }
         catch(IOException ex){
             ex.printStackTrace();
