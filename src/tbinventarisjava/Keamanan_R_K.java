@@ -52,6 +52,7 @@ public double sesuai=0.0;
             Writer.write("Kekokohan = "+keamanan.getKekokohan()+"\t");
             Writer.write("Kunci = "+keamanan.getKunci()+"\t");
             Writer.write("Keamanan = "+keamanan.getKeamanan()+"\t");
+            Writer.close();
         }
         catch(IOException ex){
             ex.printStackTrace();
