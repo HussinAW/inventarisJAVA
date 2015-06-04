@@ -71,6 +71,7 @@ public double cctv_sesuai = 0.0;
                    Writer.write("jumlah CCTV = "+elektronik.getJumlah_cctv()+"\t");
                     Writer.write("kondisi CCTV = "+elektronik.getKondisi_cctv()+"\t");
                      Writer.write("posisi CCTV = "+elektronik.getPosisi_cctv()+"\t");
+                     Writer.close();
         }
         catch(IOException ex){
             ex.printStackTrace();
