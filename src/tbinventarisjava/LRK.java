@@ -89,7 +89,7 @@ public double sesuai=0.0;
      }
     public void simpan(){
         try{
-            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            FileWriter  Writer = new FileWriter ("Lingkungan Ruang Kelas.txt");
             Writer.write("Kondisi lantai = "+kebersihan.getKondisi_lantai()+"\t");
             Writer.write("Kondisi dinding = "+kebersihan.getKondisi_dinding()+"\t");
             Writer.write("Kondisi atap = "+kebersihan.getKondisi_atap()+"\t");
