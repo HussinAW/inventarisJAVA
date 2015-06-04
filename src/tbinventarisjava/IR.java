@@ -33,7 +33,8 @@ public class IR{
             FileWriter Writer = new FileWriter("Identitas Kelas.txt");
             Writer.write("Nama ruang= "+IR.getNama_ruang()+"\t");
             Writer.write("Lokasi ruang= "+IR.getLokasi_ruang()+"\t");
-            Writer.write("Program studi= "+IR.getProgram_studi()+"\t");           
+            Writer.write("Program studi= "+IR.getProgram_studi()+"\t"); 
+            Writer.close();
         }
         catch(IOException ex){
             ex.printStackTrace();
