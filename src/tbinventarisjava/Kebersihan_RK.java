@@ -76,6 +76,7 @@ public class Kebersihan_RK extends super_abstrack {
             Writer.write("Pencahayaan = "+clean.getPencahayaan()+"\t");
             Writer.write("Kelembapan  = "+clean.getKelembapan()+"\t");
             Writer.write("Suhu = "+clean.getSuhu()+"\t");
+            Writer.close();
         }
         catch(IOException ex){
             ex.printStackTrace();
