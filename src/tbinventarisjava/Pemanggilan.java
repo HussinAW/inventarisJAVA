@@ -1,9 +1,9 @@
 package tbinventarisjava;
-public class Pemanggilan {
+/*public class Pemanggilan {
  
     
-    public static void main(String[]Args){
-        IR as= new IR();
+   /* public static void main(String[]Args){
+       /* IR as= new IR();
         as.input();
         as.simpan();
         super_abstrack elektronik = new JKPS();
@@ -38,4 +38,4 @@ public class Pemanggilan {
         an.tampil();
  
  }
-}
+}*/

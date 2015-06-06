@@ -16,7 +16,6 @@ public class Kebersihan_RK extends super_abstrack {
     Kebersihan_ruang_kelas clean = new Kebersihan_ruang_kelas();
     public static double sesuai = 0.0;
 
-    @Override
     public double input(){
         System.out.println("Inputkan Sirkulasi udara :");
         System.out.println("Lancar");
@@ -69,7 +68,7 @@ public class Kebersihan_RK extends super_abstrack {
         return sesuai;
 
     }
-    public void simpan(){
+    public double simpan(){
         try{
             FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
             Writer.write("Sirkulasi udara = "+clean.getSirkulasi_udara()+"\t");
@@ -82,26 +81,13 @@ public class Kebersihan_RK extends super_abstrack {
             ex.printStackTrace();
 
         }
+        return 0;
     }
+
     @Override
     public double tampil() {
-         System.out.println("kondisi sirkulasi udara : "+ clean.getSirkulasi_udara());
-        
-        System.out.println("========================================================================/n");
-        System.out.println("kondisi cahaya: "+ clean.getPencahayaan());
-        
-        System.out.println("========================================================================/n");
-        System.out.println("kondisi kelembapan : "+clean.getKelembapan());
-        
-        System.out.println("========================================================================/n");
-        System.out.println("kondisi suuhu : "+clean.getSuhu());
-        
-        System.out.println("========================================================================/n");System.out.println("kondisi kelembapan : "+clean.getKelembapan());
-        
-
-        
-        return sesuai;
-        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+   
     
 }

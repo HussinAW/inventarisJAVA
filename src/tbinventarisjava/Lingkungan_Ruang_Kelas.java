@@ -1,13 +1,19 @@
 
 package tbinventarisjava;
 
-public  class Lingkungan_Ruang_Kelas {
+import java.awt.BorderLayout;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public  class Lingkungan_Ruang_Kelas extends super_abstrack{
     private String kondisi_lantai;
     private String kondisi_dinding;
     private String kondisi_atap;
     private String kondisi_pintu;
     private String kondisi_jendela;
     public double sesuai=0.0;
+    Scanner input = new Scanner (System.in);
 
     public String getKondisi_lantai() {
         return kondisi_lantai;
@@ -76,5 +82,80 @@ public  class Lingkungan_Ruang_Kelas {
     public void setKondisi_jendela(String kondisi_jendela) {
         this.kondisi_jendela = kondisi_jendela;
     }
+    
 
+
+    
+    @Override
+    public double Analisis() {
+         if(getKondisi_lantai().equals("bersih")){
+         sesuai++;
+     }
+     else{
+         
+     }
+         
+    
+     if(getKondisi_lantai().equals("bersih")){
+        sesuai++;
+     }
+     else{
+         
+     }
+     
+     if(getKondisi_lantai().equals("bersih")){
+         sesuai++;
+     }
+     else{
+         
+     }
+     
+     if(getKondisi_pintu().equals("bersih")){
+         sesuai++;
+     }
+     else{
+         
+     }
+    
+     if(getKondisi_jendela().equals("bersih")){
+         sesuai++;
+     }
+     else{
+         
+     }
+    return sesuai;
+ 
+
+     }
+    @Override
+    public double simpan(){
+        try{
+            FileWriter  Writer = new FileWriter ("Lingkungan Ruang Kelas.txt");
+            Writer.write("Kondisi lantai = "+getKondisi_lantai()+"\t");
+            Writer.write("Kondisi dinding = "+getKondisi_dinding()+"\t");
+            Writer.write("Kondisi atap = "+getKondisi_atap()+"\t");
+            Writer.write("Kondisi pintu = "+getKondisi_pintu()+"\t");
+            Writer.write("Kondisi jendela = "+getKondisi_jendela()+"\t");
+            Writer.close();
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+
+        }
+        return 0;
+    }
+
+    
+    @Override
+       public double tampil(){
+        System.out.println("kondisi lantai:\t"+getKondisi_lantai());
+        System.out.println("kondisi dinding:\t"+getKondisi_dinding());
+        System.out.println("kondisi atap:\t"+getKondisi_atap());
+        System.out.println("kondisi pintu:\t"+getKondisi_pintu());
+        System.out.println("Kondisi Jendela:\t"+getKondisi_jendela());
+        
+        return 0;
+
+   
+}
 }

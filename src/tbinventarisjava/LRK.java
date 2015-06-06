@@ -21,7 +21,6 @@ public double sesuai=0.0;
 
 
 
-    @Override
     public double input() {
            System.out.println("Masukkan kondisi lantai: ");
     kebersihan.setKondisi_lantai(input.next());
@@ -87,7 +86,12 @@ public double sesuai=0.0;
  
 
      }
-    public void simpan(){
+
+    /**
+     *
+     */
+    @Override
+    public double simpan(){
         try{
             FileWriter  Writer = new FileWriter ("Lingkungan Ruang Kelas.txt");
             Writer.write("Kondisi lantai = "+kebersihan.getKondisi_lantai()+"\t");
@@ -101,12 +105,15 @@ public double sesuai=0.0;
             ex.printStackTrace();
 
         }
+    return 0;
     }
 
     @Override
     public double tampil() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    
 
    
 

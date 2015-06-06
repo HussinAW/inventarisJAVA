@@ -12,5 +12,5 @@ package tbinventarisjava;
 public abstract class super_abstrack {
     public abstract double Analisis();
     public abstract double tampil();
-    public abstract double input();
+    public abstract double simpan();
 }

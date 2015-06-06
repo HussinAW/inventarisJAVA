@@ -57,6 +57,9 @@ private String keausan;
         this.keausan = keausan;
     }
     
-
+public double tampil(){
+    return 0;
+    
+}
 
 }

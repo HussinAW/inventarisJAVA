@@ -6,16 +6,19 @@
 
 package tbinventarisjava;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  *
  * @author nurmasari
  */
-public class Jumlah_Kondisi_Posisisarana {
+public class Jumlah_Kondisi_Posisisarana extends super_abstrack{
 private int jumlah_steker;
 private int kondisi_steker;
 private String posisi_steker;
 private int jumlah_lcd;
-private String kondisi_lcd;
+private int kondisi_lcd;
 private String posisi_lcd;
 private int jumlah_lampu;
 private int kondisi_lampu;
@@ -24,7 +27,7 @@ private int jumlah_kipasangin;
 private int kondisi_kipasangin;
 private String posisi_kipasangin;
 private int jumlah_ac;
-private String kondisi_ac;
+private int kondisi_ac;
 private String posisi_ac;
 private String SSID;
 private int bandwith;
@@ -33,20 +36,23 @@ private int kondisi_cctv;
 private String posisi_cctv;
 public double sesuai=0.0;
 
-    public String getKondisi_ac() {
+
+    private Object input;
+
+    public int getKondisi_ac() {
         return kondisi_ac;
     }
 
-    public void setKondisi_ac(String kondisi_ac) {
+    public void setKondisi_ac(int kondisi_ac) {
         this.kondisi_ac = kondisi_ac;
     }
 
     
-public String getKondisi_lcd() {
+public int getKondisi_lcd() {
         return kondisi_lcd;
     }
 
-    public void setKondisi_lcd(String kondisi_lcd) {
+    public void setKondisi_lcd(int kondisi_lcd) {
         this.kondisi_lcd = kondisi_lcd;
     }
 
@@ -259,4 +265,86 @@ public String getKondisi_lcd() {
      }
      return this.sesuai;
     }  
+
+    @Override
+    public double Analisis() {
+         Analisis(4,getJumlah_steker(),getKondisi_steker(),0.0,getPosisi_steker());    
+        Analisis(1,getJumlah_lcd(),getKondisi_lcd(),0.0,getPosisi_lcd());
+   Analisis(18,getJumlah_lampu(),getKondisi_lampu(), 0.0, getPosisi_lampu());
+    Analisis(2,getJumlah_kipasangin(),getKondisi_kipasangin(), 0.0, getPosisi_kipasangin());
+   Analisis(1,getJumlah_ac(),getKondisi_ac(),0.0, getPosisi_ac());
+    Analisis(2,getJumlah_cctv(),getKondisi_cctv(),0.0,getPosisi_cctv());
+    return 0;
+    }
+
+    @Override
+    public double tampil() {
+          System.out.println("Jumlah steker: "+ getJumlah_steker());
+        System.out.println("Jumlah kondisi baik Steker : "+ getKondisi_steker());
+        System.out.println("Posisi steker berada : "+ getPosisi_steker());
+        System.out.println("========================================================================/n");
+        System.out.println("Jumlah kabel LCD : "+ getJumlah_lcd());
+        System.out.println("Kondisi kabel LCD : "+getKondisi_lcd());
+        System.out.println("Posisi kabel LCD berada : "+getPosisi_lcd());
+        System.out.println("========================================================================/n");
+        System.out.println("Jumlah lampu : "+getJumlah_lampu());
+        System.out.println("Jumlah kondisi baik lampu : "+getKondisi_lampu());
+        System.out.println("Posisi lampu berada :  "+ getPosisi_lampu());
+        System.out.println("========================================================================/n");
+        System.out.println("Jumlah kipas angin : "+getJumlah_kipasangin());
+        System.out.println("jumlah kipas angin yang masih berfungsi: "+ getKondisi_kipasangin());
+        System.out.println("Posisi kipas angin berada : "+ getPosisi_kipasangin());
+        System.out.println("========================================================================/n");
+        System.out.println("Masukkan jumlah AC : "+getJumlah_ac());
+        System.out.println("kondisi AC : "+ getKondisi_ac());
+        System.out.println("Posisi Ac berada:"+getPosisi_ac());
+        System.out.println("========================================================================/n");
+        System.out.println("Masukkan SSID:"+getSSID());
+        System.out.println("Masukkan bandwith: "+getBandwith());
+        System.out.println("========================================================================/n");
+        System.out.println("Jumlah CCTV : "+ getJumlah_cctv());
+        System.out.println("Jumlah kondisi baik CCTV : "+ getKondisi_cctv());
+        System.out.println("Posisi CCTV berada: "+getPosisi_cctv());
+        System.out.println("========================================================================/n");
+
+    return 0;
+    }
+
+    @Override
+    public double simpan() {
+               try{
+            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            Writer.write("jumlah steker = "+getJumlah_steker()+"\t");
+            Writer.write("kondisi steker = "+getKondisi_steker()+"\t");
+            Writer.write("posisi steker = "+getPosisi_steker()+"\t");
+            Writer.write("jumlah LCD = "+getJumlah_lcd()+"\t");
+            Writer.write("kondisi LCD = "+getKondisi_lcd()+"\t");
+            Writer.write("posisi LCD = "+getPosisi_lcd()+"\t");
+            Writer.write("jumlah lampu  = "+ getJumlah_lampu()+"\t");
+             Writer.write("kondisi lampu = "+ getKondisi_lampu()+"\t");
+              Writer.write("posisi lampu = "+ getPosisi_lampu()+"\t");
+             Writer.write("jumlah kipas angin = "+ getJumlah_kipasangin()+"\t");
+              Writer.write("kondisi kipas angin = "+ getKondisi_kipasangin()+"\t");
+             Writer.write("posisi kipas angin = "+ getPosisi_kipasangin()+"\t");
+              Writer.write("jumlah AC= "+ getJumlah_ac()+"\t");
+               Writer.write("kondisi AC = "+ getKondisi_ac()+"\t");
+                Writer.write("posisi AC = "+ getPosisi_ac()+"\t");
+                 Writer.write(" SSID= "+ getSSID()+"\t");
+                  Writer.write("bandwith = "+ getBandwith()+"\t");
+                   Writer.write("jumlah CCTV = "+ getJumlah_cctv()+"\t");
+                    Writer.write("kondisi CCTV = "+ getKondisi_cctv()+"\t");
+                     Writer.write("posisi CCTV = "+ getPosisi_cctv()+"\t");
+                     Writer.close();
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+
+        }
+    return 0;
+    }
+
+   
+    
+
+    
 }

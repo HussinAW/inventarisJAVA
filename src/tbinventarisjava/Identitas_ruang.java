@@ -5,6 +5,9 @@
  */
 package tbinventarisjava;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  *
  * @author ana
@@ -37,5 +40,25 @@ public class Identitas_ruang {
     public void setProgram_studi(String Program_studi) {
         this.Program_studi = Program_studi;
     }
+        public double simpan(){
+        try{
+            FileWriter Writer = new FileWriter("Identitas Kelas.txt");
+            Writer.write("Nama ruang= "+getNama_ruang()+"\t");
+            Writer.write("Lokasi ruang= "+getLokasi_ruang()+"\t");
+            Writer.write("Program studi= "+getProgram_studi()+"\t"); 
+            Writer.close();
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+            
+        }
+        return 0;
+    }
     
+    public double tampil(){
+        System.out.println("Nama ruang:\t"+getNama_ruang());
+        System.out.println("Lokasi ruang:\t"+getLokasi_ruang());
+        System.out.println("Program studi:\t"+getProgram_studi());
+        return 0;
+    }
 }

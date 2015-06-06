@@ -56,11 +56,9 @@ public double sesuai=0.0;
     return sesuai;
     }
 
-    @Override
-    public double tampil() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    public void simpan(){
+   
+@Override
+    public double simpan(){
         try{
             FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
             Writer.write("Kebisingan = "+nyaman.getKebisingan()+"\t");
@@ -74,9 +72,9 @@ public double sesuai=0.0;
             ex.printStackTrace();
 
         }
+    return 0;
     }
 
-    @Override
     public double input() {
     System.out.println("Masukkan bising atau tidak Ruang kelas : ");
     nyaman.setKebisingan(input.next());
@@ -91,5 +89,9 @@ public double sesuai=0.0;
     return 0;
 }
 
+    @Override
+    public double tampil() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
-   

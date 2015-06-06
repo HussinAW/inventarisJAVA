@@ -7,6 +7,7 @@ import java.util.Scanner;
  *
  * @author nurmasari
  */
+/*
 public class JKPS extends super_abstrack {
 Scanner input = new Scanner (System.in);
 public Jumlah_Kondisi_Posisisarana elektronik = new Jumlah_Kondisi_Posisisarana();
@@ -169,3 +170,4 @@ public double cctv_sesuai = 0.0;
     return 0;
 }
 }
+*/
