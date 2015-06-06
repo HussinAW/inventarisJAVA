@@ -6,11 +6,14 @@
 
 package tbinventarisjava;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  *
  * @author nurmasari
  */
-public class Kebersihan_ruang_kelas {
+public class Kebersihan_ruang_kelas extends super_abstrack {
     private String sirkulasi_udara;
     private int pencahayaan;
     private int kelembapan;
@@ -48,4 +51,77 @@ public class Kebersihan_ruang_kelas {
     public void setSuhu(int suhu) {
         this.suhu = suhu;
     }
+
+    @Override
+    public double Analisis() {
+        if(getSirkulasi_udara().equals("lancar")){
+         sesuai++;
+     }
+     else{
+         
+     }   
+            if(getPencahayaan()<= 350 &&getPencahayaan()>=250){
+         sesuai++;
+     }
+     else{
+         
+     }   
+            if(getKelembapan()<=80 && getKelembapan()>=70){
+        return sesuai;
+    }
+            else{
+                
+            }
+            if(getKelembapan()<=80 && getKelembapan()>=70){
+        return sesuai;
+    }
+            else{
+                
+            }if(getSuhu()<=35 && getSuhu()>=25){
+        return sesuai;
+    }
+            else{
+                
+            }
+            
+        return sesuai;
+    }
+
+    @Override
+    public double tampil() {
+     System.out.println("kondisi sirkulasi udara : "+getSirkulasi_udara());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi cahaya: "+ getPencahayaan());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi kelembapan : "+getKelembapan());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi suuhu : "+getSuhu());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi kelembapan : "+getKelembapan());
+        
+
+        
+        return sesuai;     
+
+    }
+
+    @Override
+    public double simpan() {
+    try{
+            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            Writer.write("Sirkulasi udara = "+getSirkulasi_udara()+"\t");
+            Writer.write("Pencahayaan = "+getPencahayaan()+"\t");
+            Writer.write("Kelembapan  = "+getKelembapan()+"\t");
+            Writer.write("Suhu = "+getSuhu()+"\t");
+            Writer.close();
+        }
+        catch(IOException ex){
+            ex.printStackTrace();   
+    }
+        return 0;
+}
 }

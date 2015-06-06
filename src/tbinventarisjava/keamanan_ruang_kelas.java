@@ -5,11 +5,14 @@
  */
 package tbinventarisjava;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  *
  * @author Toshiba
  */
-public class keamanan_ruang_kelas {
+public class keamanan_ruang_kelas extends super_abstrack {
     private String kekokohan;
     private String kunci;
     private String keamanan;
@@ -69,6 +72,60 @@ public class keamanan_ruang_kelas {
      */
     public void setSesuai(double sesuai) {
         this.sesuai = sesuai;
+    }
+
+    @Override
+    public double Analisis() {
+        if(getKekokohan().equals("kokoh")){
+         sesuai++;
+     }
+     else{
+         
+     }   
+      
+         if(getKunci().equals("ada")){
+         sesuai++;
+     }
+     else{
+         
+     }
+             if(getKeamanan().equals("aman")){
+         sesuai++;
+     }
+     else{
+         
+     }
+    return sesuai;
+    }
+
+    @Override
+    public double tampil() {
+    System.out.println("kondisi kekokohan : "+ getKekokohan());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi keamanan: "+ getKeamanan());
+        
+        System.out.println("========================================================================/n");
+        System.out.println("kondisi kunci : "+getKunci());
+        
+        System.out.println("========================================================================/n");
+        return sesuai;   
+    }
+
+    @Override
+    public double simpan() {
+         try{
+            FileWriter  Writer = new FileWriter ("Keamanan_ruang_kelas.txt");
+            Writer.write("Kekokohan = "+getKekokohan()+"\t");
+            Writer.write("Kunci = "+getKunci()+"\t");
+            Writer.write("Keamanan = "+getKeamanan()+"\t");
+            Writer.close();
+        }
+        catch(IOException ex){
+            ex.printStackTrace();
+
+        }
+        return 0;
     }
     
     
