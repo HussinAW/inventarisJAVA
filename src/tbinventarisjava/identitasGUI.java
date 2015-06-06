@@ -27,6 +27,11 @@ public class identitasGUI extends javax.swing.JFrame {
         //IR identitas = new IR();
     public identitasGUI() {
         initComponents();
+        identitas.setVisible(false);
+        JKPS.setVisible(false);
+        LINGKUNGAN.setVisible(false);
+        KENYAMANAN.setVisible(false);
+        TAMPIL.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -481,7 +486,6 @@ public class identitasGUI extends javax.swing.JFrame {
 
         getContentPane().add(JKPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 590));
 
-        LINGKUNGAN.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         LINGKUNGAN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
