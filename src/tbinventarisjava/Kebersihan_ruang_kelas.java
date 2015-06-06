@@ -112,7 +112,7 @@ public class Kebersihan_ruang_kelas extends super_abstrack {
     @Override
     public double simpan() {
     try{
-            FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
+            FileWriter  Writer = new FileWriter ("Kebersihan_ruang_kelas.txt");
             Writer.write("Sirkulasi udara = "+getSirkulasi_udara()+"\t");
             Writer.write("Pencahayaan = "+getPencahayaan()+"\t");
             Writer.write("Kelembapan  = "+getKelembapan()+"\t");
