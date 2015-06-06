@@ -21,7 +21,7 @@ public class identitasGUI extends javax.swing.JFrame {
         Lingkungan_Ruang_Kelas lingkungan = new Lingkungan_Ruang_Kelas();
         Kenyamanan_Ruang_Kelas kenyamanan = new Kenyamanan_Ruang_Kelas();
         keamanan_ruang_kelas keamaanan = new keamanan_ruang_kelas();
-        Login login = new Login();
+       
     private Object ipassword;
         
         //IR identitas = new IR();
