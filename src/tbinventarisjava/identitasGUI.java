@@ -892,7 +892,6 @@ public class identitasGUI extends javax.swing.JFrame {
        
            
        }
-       jButton5ActionPerformed(evt);
        LOGIN.setVisible(false);
        
     }//GEN-LAST:event_jButton5ActionPerformed
