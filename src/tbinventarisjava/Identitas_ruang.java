@@ -47,8 +47,24 @@ public class Identitas_ruang {
     public void setProgram_studi(String Program_studi) {
         this.Program_studi = Program_studi;
     }
-        public void database(){
-        
+    public void database(){
+        try{
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            final String username="root";
+            final String password="";
+            final Connection koneksi = DriverManager.getConnection("jdbc:mysql://localhost:3306/sistem_inventaris", username, password);
+            final PreparedStatement prepare = koneksi.prepareStatement(" INSERT INTO id_kelas " + " (Nama_ruang, Lokasi_ruang, Program_studi)"+ " VALUES "+" (?, ?, ?);");
+            prepare.setString(1,getNama_ruang());
+            prepare.setString(2,getLokasi_ruang());
+            prepare.setString(3,getProgram_studi());
+            prepare.executeUpdate();
+            
+        }
+        catch (final SQLException ex){}
+        catch(final InstantiationException ex){}
+        catch(final IllegalAccessException ex){}
+        catch(final ClassNotFoundException ex){}
+        catch(InputMismatchException ex){}
         
     }
     

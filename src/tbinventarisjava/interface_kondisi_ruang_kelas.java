@@ -15,6 +15,7 @@ public interface interface_kondisi_ruang_kelas {
     public  double HitungLuas();
     public  double HitungRasio();
     public  double tampil();
+    public void database();
    
     
 }
