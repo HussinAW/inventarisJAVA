@@ -3,6 +3,16 @@ package tbinventarisjava;
 
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.InputMismatchException;
+
 
 /**
  *
@@ -871,6 +881,41 @@ public class identitasGUI extends javax.swing.JFrame {
         keamaanan.setKekokohan(kekokohan.getSelectedItem().toString());
         keamaanan.setKunci(kunci.getSelectedItem().toString());
         keamaanan.setKeamanan(bahaya.getSelectedItem().toString());
+        try{
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+                final String username="root";
+                final String password="";
+                final Connection koneksi = DriverManager.getConnection("jdbc:mysql://localhost:3306/sistem_inventaris", username, password);
+                final PreparedStatement prepare = koneksi.prepareStatement(" INSERT INTO identitas_kelas " + " (Nama_ruang, Lokasi_ruang, Program_studi, Panjang_ruang, Lebar_ruang, J_kursi, J_stopkontak, J_kabel_LCD, J_lampu, J_kipas_angin, J_AC, J_CCTV, SSID, Bandwidth, K_lantai, K_dinding, K_atap, K_pintu, K_jendela, Sirkulasi_uadara, N_pencahayaan, N_kelembapan, Suhu )"+ " VALUES "+" (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+                prepare.setString(1,nama.getNama_ruang());
+                prepare.setString(2,nama.getLokasi_ruang());
+                prepare.setString(3,nama.getProgram_studi());
+                prepare.setDouble(4,isi.panjang);
+                prepare.setDouble(5,isi.lebar);
+                prepare.setDouble(6,isi.jumlah_kursi);
+                prepare.setInt(7,kondisi.getJumlah_steker());
+                prepare.setInt(8,kondisi.getJumlah_lcd());
+                prepare.setInt(9,kondisi.getJumlah_lampu());
+                prepare.setInt(10,kondisi.getJumlah_kipasangin());
+                prepare.setInt(11,kondisi.getJumlah_ac());
+                prepare.setInt(12,kondisi.getJumlah_cctv());
+                prepare.setString(13,kondisi.getSSID());
+                prepare.setInt(14,kondisi.getBandwith());
+                prepare.setString(15,lingkungan.getKondisi_lantai());
+                prepare.setString(16,lingkungan.getKondisi_dinding());
+                prepare.setString(17,lingkungan.getKondisi_atap());
+                prepare.setString(18,lingkungan.getKondisi_pintu());
+                prepare.setString(19,lingkungan.getKondisi_jendela());
+                
+                
+                
+                prepare.executeUpdate();
+        }
+        catch (final SQLException ex){}
+        catch(final InstantiationException ex){}
+        catch(final IllegalAccessException ex){}
+        catch(final ClassNotFoundException ex){}
+        catch(InputMismatchException ex){}
         
         KENYAMANAN.setVisible(false);
     }//GEN-LAST:event_jButton6ActionPerformed
