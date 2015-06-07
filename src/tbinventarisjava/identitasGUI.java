@@ -449,7 +449,12 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField1.setText("6.CCTV");
-        JKPS.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        JKPS.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel29.setText("Jumlah:");
@@ -582,14 +587,14 @@ public class identitasGUI extends javax.swing.JFrame {
         lsuhu.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         LINGKUNGAN.add(lsuhu, new org.netbeans.lib.awtextra.AbsoluteConstraints(141, 252, 73, -1));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton3.setText("selanjutnya");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        LINGKUNGAN.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 350, -1, -1));
+        LINGKUNGAN.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, -1, -1));
 
         jLabel48.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel48.setText("C");
@@ -918,6 +923,10 @@ public class identitasGUI extends javax.swing.JFrame {
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_passwordActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     
     

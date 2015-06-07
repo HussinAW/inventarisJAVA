@@ -1,1 +1,1 @@
-Nama ruang= 	Lokasi ruang= 	Program studi= 	
+Nama ruang= 712	Lokasi ruang= gkb3	Program studi= informatika	
