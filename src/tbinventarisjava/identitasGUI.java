@@ -25,6 +25,7 @@ public class identitasGUI extends javax.swing.JFrame {
         luas_ruang isi = new luas_ruang( panjangnya, lebarnya, jumlahkursinya, luasnya);
         Jumlah_Kondisi_Posisisarana kondisi = new Jumlah_Kondisi_Posisisarana();
         Lingkungan_Ruang_Kelas lingkungan = new Lingkungan_Ruang_Kelas();
+        Kebersihan_ruang_kelas bersih = new Kebersihan_ruang_kelas();
         Kenyamanan_Ruang_Kelas kenyamanan = new Kenyamanan_Ruang_Kelas();
         keamanan_ruang_kelas keamaanan = new keamanan_ruang_kelas();
        
@@ -58,7 +59,7 @@ public class identitasGUI extends javax.swing.JFrame {
         password = new javax.swing.JPasswordField();
         jLabel94 = new javax.swing.JLabel();
         jLabel92 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
         identitas = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -189,7 +190,9 @@ public class identitasGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(680, 400));
         setMinimumSize(new java.awt.Dimension(680, 400));
+        setPreferredSize(new java.awt.Dimension(680, 400));
         addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 formFocusGained(evt);
@@ -199,8 +202,10 @@ public class identitasGUI extends javax.swing.JFrame {
 
         LOGIN.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         LOGIN.setFocusCycleRoot(true);
-        LOGIN.setMaximumSize(new java.awt.Dimension(690, 400));
+        LOGIN.setMaximumSize(new java.awt.Dimension(240, 240));
+        LOGIN.setMinimumSize(new java.awt.Dimension(240, 240));
         LOGIN.setNextFocusableComponent(identitas);
+        LOGIN.setPreferredSize(new java.awt.Dimension(680, 400));
         LOGIN.addHierarchyListener(new java.awt.event.HierarchyListener() {
             public void hierarchyChanged(java.awt.event.HierarchyEvent evt) {
                 LOGINHierarchyChanged(evt);
@@ -210,11 +215,11 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jLabel90.setFont(new java.awt.Font("OCR-A BT", 1, 24)); // NOI18N
         jLabel90.setText("UNIVERSITAS MUHAMMADIYAH MALANG");
-        LOGIN.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, -1, -1));
+        LOGIN.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, -1, -1));
 
         jLabel91.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
         jLabel91.setText("INVENTARIS KELAS");
-        LOGIN.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, -1, -1));
+        LOGIN.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton5.setText("masuk");
@@ -223,7 +228,7 @@ public class identitasGUI extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        LOGIN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, -1, -1));
+        LOGIN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, -1, -1));
 
         jLabel88.setFont(new java.awt.Font("Tahoma", 3, 20)); // NOI18N
         jLabel88.setForeground(new java.awt.Color(51, 255, 255));
@@ -253,12 +258,12 @@ public class identitasGUI extends javax.swing.JFrame {
         LOGIN.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 170, 140));
 
         jLabel92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto/umm11.jpg"))); // NOI18N
-        LOGIN.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 400));
+        LOGIN.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 400));
 
-        jLabel23.setText("jLabel23");
-        LOGIN.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, -1, -1));
+        jLabel27.setText("jLabel27");
+        LOGIN.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, -1, -1));
 
-        getContentPane().add(LOGIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 400));
+        getContentPane().add(LOGIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 400));
 
         identitas.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         identitas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -555,7 +560,7 @@ public class identitasGUI extends javax.swing.JFrame {
         SSID.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "UMMhotspot", "lainnya" }));
         JKPS.add(SSID, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 450, -1, -1));
 
-        getContentPane().add(JKPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 590));
+        getContentPane().add(JKPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 590));
 
         LINGKUNGAN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -789,9 +794,13 @@ public class identitasGUI extends javax.swing.JFrame {
        lingkungan.setKondisi_atap(latap.getSelectedItem().toString());
        lingkungan.setKondisi_jendela(ljendela.getSelectedItem().toString());
        lingkungan.setKondisi_pintu(lpintu.getSelectedItem().toString());
+       bersih.setSirkulasi_udara(lsirkulasi.getSelectedItem().toString());
+       bersih.setPencahayaan(Integer.parseInt(lpencahayaan.getText().toString()));
+       bersih.setKelembapan(Integer.parseInt(lkelembapan.getText().toString()));
        
        lingkungan.tampil();
        lingkungan.database();
+       bersih.tampil();
        LINGKUNGAN.setVisible(false);
        KENYAMANAN.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -1006,10 +1015,10 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
