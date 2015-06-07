@@ -214,7 +214,7 @@ public int getKondisi_lcd() {
         else{
             
         }
-    if(posisi.equals("dekat_dosen")|| posisi.equals("pojok")){
+    if(posisi.equals("dekatdosen")|| posisi.equals("pojok")){
         this.sesuai++;
     }
     else{
