@@ -1,1 +1,1 @@
-Kondisi lantai = input	Kondisi dinding = input	Kondisi atap = input	Kondisi pintu = input	Kondisi jendela = input	
+Kondisi lantai = bersih	Kondisi dinding = bersih	Kondisi atap = bersih	Kondisi pintu = bersih	Kondisi jendela = kotor	
