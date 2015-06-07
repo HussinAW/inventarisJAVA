@@ -8,10 +8,10 @@ import java.util.InputMismatchException;
 
 
 public class luas_ruang  implements interface_kondisi_ruang_kelas {
-    public  double panjang;
-    public  double lebar;
-    public  double jumlah_kursi;
-    public  double luas;
+    double panjang;
+    double lebar;
+    double jumlah_kursi;
+    private  double luas;
     public String getSesuai(){
         return Sesuai;
     }
@@ -23,18 +23,18 @@ public class luas_ruang  implements interface_kondisi_ruang_kelas {
     }
     @Override
     public double HitungLuas() {
-        luas =panjang*lebar;
-        return luas;
+        setLuas(getPanjang() * getLebar());
+        return getLuas();
     }
 
     @Override
     public double HitungRasio() {
-        return jumlah_kursi/luas;
+        return getJumlah_kursi()/getLuas();
     }   
 
     @Override
     public double tampil() {
-          System.out.println("luas="+luas);
+          System.out.println("luas="+getLuas());
        System.out.println("rasio="+HitungRasio());
         return 0;
     }
@@ -45,9 +45,9 @@ public class luas_ruang  implements interface_kondisi_ruang_kelas {
             final String password="";
             final Connection koneksi = DriverManager.getConnection("jdbc:mysql://localhost:3306/sistem_inventaris", username, password);
             final PreparedStatement prepare = koneksi.prepareStatement(" INSERT INTO isi_kelas " + " (Panjang_ruang, Lebar_ruang, J_kursi)"+ " VALUES "+" (?, ?, ?);");
-            prepare.setDouble(1,panjang);
-            prepare.setDouble(2,lebar);
-            prepare.setDouble(3,jumlah_kursi);
+            prepare.setDouble(1, getPanjang());
+            prepare.setDouble(2, getLebar());
+            prepare.setDouble(3, getJumlah_kursi());
             prepare.executeUpdate();
         }
         catch (final SQLException ex){}
@@ -55,5 +55,37 @@ public class luas_ruang  implements interface_kondisi_ruang_kelas {
         catch(final IllegalAccessException ex){}
         catch(final ClassNotFoundException ex){}
         catch(InputMismatchException ex){}
+    }
+
+    public double getPanjang() {
+        return panjang;
+    }
+
+    public void setPanjang(double panjang) {
+        this.panjang = panjang;
+    }
+
+    public double getLebar() {
+        return lebar;
+    }
+
+    public void setLebar(double lebar) {
+        this.lebar = lebar;
+    }
+
+    public double getJumlah_kursi() {
+        return jumlah_kursi;
+    }
+
+    public void setJumlah_kursi(double jumlah_kursi) {
+        this.jumlah_kursi = jumlah_kursi;
+    }
+
+    public double getLuas() {
+        return luas;
+    }
+
+    public void setLuas(double luas) {
+        this.luas = luas;
     }
 }

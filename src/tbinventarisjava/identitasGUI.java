@@ -778,7 +778,11 @@ public class identitasGUI extends javax.swing.JFrame {
        nama.setProgram_studi(namajurusan.getText());
        nama.database();
        nama.tampil();
-       panjangnya=Integer.parseInt(panjang.getText());
+       isi.setPanjang(Integer.parseInt(panjang.getText().toString()));
+       isi.setLebar(Integer.parseInt(lebar.getText().toString()));
+       isi.setJumlah_kursi(Integer.parseInt(jumlahkursi.getText().toString()));
+      isi.HitungLuas();
+      isi.HitungRasio();
        lebarnya=Integer.parseInt(lebar.getText());
        jumlahkursinya=Integer.parseInt(jumlahkursi.getText());
        isi.tampil();
