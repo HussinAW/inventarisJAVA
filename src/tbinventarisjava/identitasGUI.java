@@ -32,7 +32,7 @@ public class identitasGUI extends javax.swing.JFrame {
         JKPS.setVisible(false);
         LINGKUNGAN.setVisible(false);
         KENYAMANAN.setVisible(false);
-        TAMPIL.setVisible(false);
+        TAMPILAN.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -40,6 +40,7 @@ public class identitasGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuItem1 = new javax.swing.JMenuItem();
+        jPanel2 = new javax.swing.JPanel();
         LOGIN = new javax.swing.JPanel();
         jLabel90 = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
@@ -103,10 +104,9 @@ public class identitasGUI extends javax.swing.JFrame {
         kAC = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
         pAC = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
         jCCTV = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        kCCTV = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         pCCTV = new javax.swing.JTextField();
@@ -117,6 +117,7 @@ public class identitasGUI extends javax.swing.JFrame {
         bandwith = new javax.swing.JTextField();
         jLabel35 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel58 = new javax.swing.JLabel();
         LINGKUNGAN = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
@@ -159,41 +160,21 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel56 = new javax.swing.JLabel();
         kKebisingan7 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
-        TAMPIL = new javax.swing.JPanel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jLabel63 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
-        jLabel65 = new javax.swing.JLabel();
-        jLabel66 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
-        jScrollBar1 = new javax.swing.JScrollBar();
-        jLabel69 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
-        jLabel71 = new javax.swing.JLabel();
-        jLabel72 = new javax.swing.JLabel();
-        jLabel73 = new javax.swing.JLabel();
-        jLabel74 = new javax.swing.JLabel();
-        jLabel75 = new javax.swing.JLabel();
-        jLabel76 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
-        jLabel78 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
-        jLabel79 = new javax.swing.JLabel();
-        jLabel80 = new javax.swing.JLabel();
-        jLabel81 = new javax.swing.JLabel();
-        jLabel82 = new javax.swing.JLabel();
-        jLabel83 = new javax.swing.JLabel();
-        jLabel84 = new javax.swing.JLabel();
-        jLabel85 = new javax.swing.JLabel();
-        jLabel86 = new javax.swing.JLabel();
-        jLabel87 = new javax.swing.JLabel();
+        TAMPILAN = new javax.swing.JPanel();
+        jLabel93 = new javax.swing.JLabel();
 
         jMenuItem1.setText("jMenuItem1");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -242,6 +223,12 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel89.setForeground(new java.awt.Color(51, 255, 255));
         jLabel89.setText("Password");
         LOGIN.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 110, -1));
+
+        iusername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iusernameActionPerformed(evt);
+            }
+        });
         LOGIN.add(iusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 190, 40));
 
         password.addActionListener(new java.awt.event.ActionListener() {
@@ -429,8 +416,8 @@ public class identitasGUI extends javax.swing.JFrame {
         JKPS.add(pKipasangin, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 259, 69, -1));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel25.setText("5.AC");
-        JKPS.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 297, -1, -1));
+        jLabel25.setText("6.CCTV");
+        JKPS.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel26.setText("Jumlah:");
@@ -447,20 +434,11 @@ public class identitasGUI extends javax.swing.JFrame {
         JKPS.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 319, -1, -1));
         JKPS.add(pAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 319, 69, -1));
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField1.setText("6.CCTV");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        JKPS.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, -1, -1));
-
         jLabel29.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel29.setText("Jumlah:");
         JKPS.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 384, -1, -1));
         JKPS.add(jCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 384, 51, -1));
-        JKPS.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 384, 43, -1));
+        JKPS.add(kCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 384, 43, -1));
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel30.setText("Kondisi:");
@@ -502,6 +480,10 @@ public class identitasGUI extends javax.swing.JFrame {
             }
         });
         JKPS.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 560, -1, -1));
+
+        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel58.setText("5.AC");
+        JKPS.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 297, -1, -1));
 
         getContentPane().add(JKPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 590));
 
@@ -678,115 +660,13 @@ public class identitasGUI extends javax.swing.JFrame {
 
         getContentPane().add(KENYAMANAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        TAMPIL.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
-        TAMPIL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        TAMPILAN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel57.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel57.setText("YANG TELAH ANDA INPUTKAN");
-        TAMPIL.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32569, -32757, 40, 14));
+        jLabel93.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel93.setText("TAMPILAN");
+        TAMPILAN.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, -1));
 
-        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel58.setText("Nama Ruang");
-        TAMPIL.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32758, -32717, 40, 14));
-
-        jLabel59.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel59.setText("Lokasi Ruang");
-        TAMPIL.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel60.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel60.setText("Program Studi");
-        TAMPIL.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel61.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel61.setText("Jumlah Steker");
-        TAMPIL.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel62.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel62.setText("Jumlah LCD");
-        TAMPIL.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel63.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel63.setText("Jumlah Lampu");
-        TAMPIL.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel64.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel64.setText("Jumlah Kipas Angin");
-        TAMPIL.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel65.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel65.setText("Jumlah AC");
-        TAMPIL.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel66.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel66.setText("SSID");
-        TAMPIL.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel67.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel67.setText("Bandwith");
-        TAMPIL.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-        TAMPIL.add(jScrollBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32159, -32717, -1, -1));
-
-        jLabel69.setText(":");
-        TAMPIL.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32622, -32714, 40, -1));
-
-        jLabel70.setText(":");
-        TAMPIL.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32622, -32691, 40, -1));
-
-        jLabel71.setText(":");
-        TAMPIL.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32622, -32668, 40, -1));
-
-        jLabel72.setText(":");
-        TAMPIL.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32622, -32645, 40, -1));
-
-        jLabel73.setText(":");
-        TAMPIL.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32622, -32622, 40, -1));
-
-        jLabel74.setText(":");
-        TAMPIL.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32622, -32599, 40, -1));
-
-        jLabel75.setText(":");
-        TAMPIL.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32624, -32576, 40, -1));
-
-        jLabel76.setText(":");
-        TAMPIL.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32624, -32553, 40, -1));
-
-        jLabel77.setText(":");
-        TAMPIL.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32624, -32530, 40, -1));
-
-        jLabel78.setText(":");
-        TAMPIL.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32624, -32507, 40, -1));
-
-        jLabel68.setText("jLabel68");
-        TAMPIL.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32612, -32714, -1, -1));
-
-        jLabel79.setText("jLabel79");
-        TAMPIL.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32612, -32691, -1, -1));
-
-        jLabel80.setText("jLabel80");
-        TAMPIL.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32612, -32668, -1, -1));
-
-        jLabel81.setText("jLabel81");
-        TAMPIL.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32612, -32645, -1, -1));
-
-        jLabel82.setText("jLabel82");
-        TAMPIL.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32612, -32622, -1, -1));
-
-        jLabel83.setText("jLabel83");
-        TAMPIL.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32612, -32599, -1, -1));
-
-        jLabel84.setText("jLabel84");
-        TAMPIL.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32614, -32576, -1, -1));
-
-        jLabel85.setText("jLabel85");
-        TAMPIL.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32614, -32553, -1, -1));
-
-        jLabel86.setText("jLabel86");
-        TAMPIL.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32614, -32530, -1, -1));
-
-        jLabel87.setText("jLabel87");
-        TAMPIL.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(-32614, -32507, -1, -1));
-
-        getContentPane().add(TAMPIL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(TAMPILAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -841,6 +721,10 @@ public class identitasGUI extends javax.swing.JFrame {
       kondisi.setPosisi_kipasangin(pKipasangin.getText());
       kondisi.setJumlah_ac(Integer.parseInt(jAC.getText()));
       kondisi.setKondisi_ac(Integer.parseInt(kAC.getText()));
+      kondisi.setPosisi_ac(pAC.getText());
+      kondisi.setJumlah_cctv(Integer.parseInt(jCCTV.getText()));
+      kondisi.setKondisi_cctv(Integer.parseInt(kCCTV.getText()));
+      kondisi.setPosisi_cctv(pCCTV.getText());
       kondisi.setSSID(SSID.getText());
       kondisi.setBandwith(Integer.parseInt(bandwith.getText()));
       
@@ -924,9 +808,9 @@ public class identitasGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_passwordActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void iusernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iusernameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_iusernameActionPerformed
 
     
     
@@ -971,7 +855,7 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JPanel LINGKUNGAN;
     private javax.swing.JPanel LOGIN;
     private javax.swing.JTextField SSID;
-    private javax.swing.JPanel TAMPIL;
+    private javax.swing.JPanel TAMPILAN;
     private javax.swing.JTextField bandwith;
     private javax.swing.JPanel identitas;
     private javax.swing.JTextField iusername;
@@ -1035,57 +919,27 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
-    private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
-    private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
-    private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollBar jScrollBar1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jkabelLCD;
     private javax.swing.JTextField jlampu;
     private javax.swing.JTextField jstopkontak;
     private javax.swing.JTextField jumlahkursi;
     private javax.swing.JTextField kAC;
+    private javax.swing.JTextField kCCTV;
     private javax.swing.JTextField kKebisingan;
     private javax.swing.JTextField kKebisingan1;
     private javax.swing.JTextField kKebisingan2;
