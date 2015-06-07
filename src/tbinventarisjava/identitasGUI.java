@@ -648,7 +648,7 @@ public class identitasGUI extends javax.swing.JFrame {
         LINGKUNGAN.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(304, 215, 85, 24));
 
         lkelembapan.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        LINGKUNGAN.add(lkelembapan, new org.netbeans.lib.awtextra.AbsoluteConstraints(415, 216, 83, -1));
+        LINGKUNGAN.add(lkelembapan, new org.netbeans.lib.awtextra.AbsoluteConstraints(415, 216, 90, -1));
 
         jLabel45.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel45.setText("%");
