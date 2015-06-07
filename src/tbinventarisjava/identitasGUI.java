@@ -299,6 +299,12 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Nama jurusan:");
         identitas.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 130, 30));
+
+        lokasiruang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lokasiruangActionPerformed(evt);
+            }
+        });
         identitas.add(lokasiruang, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 180, 40));
         identitas.add(namajurusan, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 180, 40));
 
@@ -620,6 +626,12 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel43.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel43.setText("Nilai pencahayaan");
         LINGKUNGAN.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 217, 113, 24));
+
+        lpencahayaan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lpencahayaanActionPerformed(evt);
+            }
+        });
         LINGKUNGAN.add(lpencahayaan, new org.netbeans.lib.awtextra.AbsoluteConstraints(141, 215, 104, 24));
 
         lsirkulasi.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -919,6 +931,10 @@ public class identitasGUI extends javax.swing.JFrame {
                 prepare.setString(17,lingkungan.getKondisi_atap());
                 prepare.setString(18,lingkungan.getKondisi_pintu());
                 prepare.setString(19,lingkungan.getKondisi_jendela());
+                prepare.setString(20, bersih.getSirkulasi_udara());
+                prepare.setInt(21,bersih.getPencahayaan());
+                prepare.setInt(22,bersih.getKelembapan());
+                prepare.setInt(23, bersih.getSuhu());
                 
                 
                 
@@ -936,6 +952,14 @@ public class identitasGUI extends javax.swing.JFrame {
     private void lsirkulasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lsirkulasiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_lsirkulasiActionPerformed
+
+    private void lpencahayaanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lpencahayaanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lpencahayaanActionPerformed
+
+    private void lokasiruangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lokasiruangActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lokasiruangActionPerformed
 
     
     
