@@ -41,6 +41,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jMenuItem1 = new javax.swing.JMenuItem();
         jPanel2 = new javax.swing.JPanel();
+        jLabel47 = new javax.swing.JLabel();
         LOGIN = new javax.swing.JPanel();
         jLabel90 = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
@@ -71,45 +72,22 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jstopkontak = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        kstopkontak = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        pstopkontak = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jkabelLCD = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
-        kkabelLCD = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        pkabelLCD = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        jlampu = new javax.swing.JTextField();
-        jLabel19 = new javax.swing.JLabel();
-        klampu = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        pLampu = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jKipasangin = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
-        kKipasangin = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
-        pKipasangin = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jAC = new javax.swing.JTextField();
-        jLabel27 = new javax.swing.JLabel();
-        kAC = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
-        pAC = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
-        jCCTV = new javax.swing.JTextField();
-        kCCTV = new javax.swing.JTextField();
-        jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        pCCTV = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
         SSID = new javax.swing.JTextField();
         jLabel33 = new javax.swing.JLabel();
@@ -118,6 +96,29 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel58 = new javax.swing.JLabel();
+        jkipas = new javax.swing.JComboBox();
+        kstopkontak = new javax.swing.JComboBox();
+        jlampu = new javax.swing.JComboBox();
+        jLabel57 = new javax.swing.JLabel();
+        kLCD = new javax.swing.JComboBox();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jstopkontak1 = new javax.swing.JComboBox();
+        jLCD = new javax.swing.JComboBox();
+        jCCTV = new javax.swing.JComboBox();
+        jAC = new javax.swing.JComboBox();
+        kkipas = new javax.swing.JComboBox();
+        kklampu = new javax.swing.JComboBox();
+        kCCTV = new javax.swing.JComboBox();
+        kAC = new javax.swing.JComboBox();
+        PSTOP = new javax.swing.JComboBox();
+        PLCD = new javax.swing.JComboBox();
+        pkipas = new javax.swing.JComboBox();
+        Plampu = new javax.swing.JComboBox();
+        pcctv = new javax.swing.JComboBox();
+        pAC = new javax.swing.JComboBox();
         LINGKUNGAN = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
@@ -142,24 +143,24 @@ public class identitasGUI extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel48 = new javax.swing.JLabel();
         KENYAMANAN = new javax.swing.JPanel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        kKebisingan = new javax.swing.JTextField();
         jLabel50 = new javax.swing.JLabel();
-        kKebisingan1 = new javax.swing.JTextField();
         jLabel51 = new javax.swing.JLabel();
-        kKebisingan2 = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
-        kbau = new javax.swing.JTextField();
         jLabel53 = new javax.swing.JLabel();
-        kKebisingan4 = new javax.swing.JTextField();
         jLabel54 = new javax.swing.JLabel();
-        kKebisingan5 = new javax.swing.JTextField();
         jLabel55 = new javax.swing.JLabel();
-        kKebisingan6 = new javax.swing.JTextField();
         jLabel56 = new javax.swing.JLabel();
-        kKebisingan7 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
+        kunci = new javax.swing.JComboBox();
+        bocor = new javax.swing.JComboBox();
+        bahaya = new javax.swing.JComboBox();
+        bau = new javax.swing.JComboBox();
+        kekokohan = new javax.swing.JComboBox();
+        aus = new javax.swing.JComboBox();
+        kerusakan = new javax.swing.JComboBox();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        bising = new javax.swing.JComboBox();
         TAMPILAN = new javax.swing.JPanel();
         jLabel93 = new javax.swing.JLabel();
 
@@ -175,6 +176,9 @@ public class identitasGUI extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 100, Short.MAX_VALUE)
         );
+
+        jLabel47.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel47.setText("kenyamanan dan keamanan Kelas");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -339,24 +343,15 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Jumlah:");
-        JKPS.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 87, -1, -1));
-
-        jstopkontak.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jstopkontakActionPerformed(evt);
-            }
-        });
-        JKPS.add(jstopkontak, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 87, 46, -1));
+        JKPS.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setText("kondisi:");
-        JKPS.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 87, -1, -1));
-        JKPS.add(kstopkontak, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 87, 44, -1));
+        jLabel12.setText("kondisi baik:");
+        JKPS.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("Posisi:");
-        JKPS.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 87, -1, -1));
-        JKPS.add(pstopkontak, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 87, 69, -1));
+        JKPS.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel13.setText("2.kabel LCD");
@@ -364,37 +359,23 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setText("Jumlah:");
-        JKPS.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 146, -1, -1));
-        JKPS.add(jkabelLCD, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 146, 46, -1));
-
-        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setText("kondisi:");
-        JKPS.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 146, -1, -1));
-        JKPS.add(kkabelLCD, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 146, 44, -1));
+        JKPS.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel16.setText("Posisi:");
-        JKPS.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 146, -1, -1));
+        JKPS.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("3.Lampu");
         JKPS.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 177, 72, -1));
-        JKPS.add(pkabelLCD, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 146, 69, -1));
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel18.setText("Jumlah:");
         JKPS.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 50, -1));
-        JKPS.add(jlampu, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 46, -1));
-
-        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel19.setText("Kondisi:");
-        JKPS.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 200, -1, -1));
-        JKPS.add(klampu, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 200, 43, -1));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel20.setText("Posisi:");
-        JKPS.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 200, -1, -1));
-        JKPS.add(pLampu, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 200, 69, -1));
+        JKPS.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel21.setText("4.Kipas Angin");
@@ -403,17 +384,10 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel22.setText("Jumlah:");
         JKPS.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 259, -1, -1));
-        JKPS.add(jKipasangin, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 259, 51, -1));
-
-        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel23.setText("Kondisi:");
-        JKPS.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 259, -1, -1));
-        JKPS.add(kKipasangin, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 259, 43, -1));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel24.setText("Posisi:");
-        JKPS.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 259, -1, -1));
-        JKPS.add(pKipasangin, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 259, 69, -1));
+        JKPS.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel25.setText("6.CCTV");
@@ -422,32 +396,18 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel26.setText("Jumlah:");
         JKPS.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 319, -1, -1));
-        JKPS.add(jAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 319, 51, -1));
-
-        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel27.setText("Kondisi:");
-        JKPS.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 319, -1, -1));
-        JKPS.add(kAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 319, 43, -1));
 
         jLabel28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel28.setText("Posisi:");
-        JKPS.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 319, -1, -1));
-        JKPS.add(pAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 319, 69, -1));
+        JKPS.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 320, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel29.setText("Jumlah:");
         JKPS.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 384, -1, -1));
-        JKPS.add(jCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 384, 51, -1));
-        JKPS.add(kCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 384, 43, -1));
-
-        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel30.setText("Kondisi:");
-        JKPS.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 384, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel31.setText("Posisi:");
-        JKPS.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 384, -1, -1));
-        JKPS.add(pCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 384, 69, -1));
+        JKPS.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 380, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel32.setText("7.SSID");
@@ -473,6 +433,7 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel35.setText("bandwith");
         JKPS.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, -1, -1));
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton2.setText("selanjutnya");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -484,6 +445,98 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel58.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel58.setText("5.AC");
         JKPS.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 297, -1, -1));
+
+        jkipas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jkipas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(jkipas, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, -1, -1));
+
+        kstopkontak.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        kstopkontak.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3", "4" }));
+        JKPS.add(kstopkontak, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, -1, -1));
+
+        jlampu.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlampu.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(jlampu, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, -1, -1));
+
+        jLabel57.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel57.setText("kondisi baik:");
+        JKPS.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, -1, -1));
+
+        kLCD.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        kLCD.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3", " " }));
+        JKPS.add(kLCD, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel15.setText("kondisi baik:");
+        JKPS.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+
+        jLabel59.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel59.setText("kondisi baik:");
+        JKPS.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 380, -1, -1));
+
+        jLabel60.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel60.setText("kondisi baik:");
+        JKPS.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, -1, -1));
+
+        jLabel61.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel61.setText("kondisi baik:");
+        JKPS.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, -1, -1));
+
+        jstopkontak1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jstopkontak1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(jstopkontak1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, -1, -1));
+
+        jLCD.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLCD.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(jLCD, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
+
+        jCCTV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jCCTV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(jCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, -1, 30));
+
+        jAC.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jAC.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(jAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, 30));
+
+        kkipas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        kkipas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(kkipas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, -1, -1));
+
+        kklampu.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        kklampu.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(kklampu, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, -1, -1));
+
+        kCCTV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        kCCTV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(kCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, -1, 30));
+
+        kAC.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        kAC.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
+        JKPS.add(kAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, -1, 30));
+
+        PSTOP.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        PSTOP.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "Dekat dosen", "Pojok", "Lainnya" }));
+        JKPS.add(PSTOP, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, 90, -1));
+
+        PLCD.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        PLCD.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "Dekat dosen", "lainnya" }));
+        JKPS.add(PLCD, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 140, 90, -1));
+
+        pkipas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pkipas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "Atap", "Lainnya" }));
+        JKPS.add(pkipas, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 260, 90, -1));
+
+        Plampu.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Plampu.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "Atap", "Lainnya", " " }));
+        JKPS.add(Plampu, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 90, -1));
+
+        pcctv.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pcctv.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "Depan", "Belakang", "Lainnya" }));
+        JKPS.add(pcctv, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 370, 90, 30));
+
+        pAC.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pAC.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "Belakang", "Samping", " Lainnya" }));
+        JKPS.add(pAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 90, 30));
 
         getContentPane().add(JKPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 590));
 
@@ -585,69 +638,36 @@ public class identitasGUI extends javax.swing.JFrame {
         getContentPane().add(LINGKUNGAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 590, 520));
 
         KENYAMANAN.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
+        KENYAMANAN.setMinimumSize(new java.awt.Dimension(125, 125));
         KENYAMANAN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel47.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel47.setText("kenyamanan dan keamanan Kelas");
-        KENYAMANAN.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        jLabel49.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel49.setText("Kebisingan:");
-        KENYAMANAN.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        kKebisingan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kKebisinganActionPerformed(evt);
-            }
-        });
-        KENYAMANAN.add(kKebisingan, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
 
         jLabel50.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel50.setText("Kebocoran:");
-        KENYAMANAN.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-        KENYAMANAN.add(kKebisingan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
+        KENYAMANAN.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 80, 60));
 
         jLabel51.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel51.setText("Keausan:");
-        KENYAMANAN.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        kKebisingan2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kKebisingan2ActionPerformed(evt);
-            }
-        });
-        KENYAMANAN.add(kKebisingan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
+        KENYAMANAN.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, -1, -1));
 
         jLabel52.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel52.setText("Bau:");
-        KENYAMANAN.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-        KENYAMANAN.add(kbau, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
+        KENYAMANAN.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, 30));
 
         jLabel53.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel53.setText("Kerusakan:");
-        KENYAMANAN.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
-        kKebisingan4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kKebisingan4ActionPerformed(evt);
-            }
-        });
-        KENYAMANAN.add(kKebisingan4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
+        KENYAMANAN.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 100, 70));
 
         jLabel54.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel54.setText("Kunci pintu dan Jendela:");
-        KENYAMANAN.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-        KENYAMANAN.add(kKebisingan5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
+        KENYAMANAN.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 170, 70));
 
         jLabel55.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel55.setText("Kekokohan:");
-        KENYAMANAN.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-        KENYAMANAN.add(kKebisingan6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
+        KENYAMANAN.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 100, 50));
 
         jLabel56.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel56.setText("Bahaya:");
-        KENYAMANAN.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-        KENYAMANAN.add(kKebisingan7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
+        KENYAMANAN.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 60, 60));
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton4.setText("selanjutnya");
@@ -658,7 +678,38 @@ public class identitasGUI extends javax.swing.JFrame {
         });
         KENYAMANAN.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
 
-        getContentPane().add(KENYAMANAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        kunci.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(kunci, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, -1, -1));
+
+        bocor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(bocor, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, -1, -1));
+
+        bahaya.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(bahaya, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, -1));
+
+        bau.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(bau, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, -1, -1));
+
+        kekokohan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(kekokohan, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 100, -1, 20));
+
+        aus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(aus, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, -1, 20));
+
+        kerusakan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(kerusakan, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, -1, 20));
+
+        jLabel19.setText("kenyamanan dan keamanan kelas");
+        KENYAMANAN.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 180, 30));
+
+        jLabel62.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel62.setText("kebisingan");
+        KENYAMANAN.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 250, -1, -1));
+
+        bising.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        KENYAMANAN.add(bising, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, -1, 20));
+
+        getContentPane().add(KENYAMANAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
 
         TAMPILAN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -696,47 +747,9 @@ public class identitasGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_lebarActionPerformed
 
-    private void SSIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSIDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SSIDActionPerformed
-
     private void namakelasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namakelasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_namakelasActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    JKPS.setVisible(rootPaneCheckingEnabled);
-        
-        kondisi.setJumlah_steker(Integer.parseInt(jstopkontak.getText()));
-      kondisi.setKondisi_steker(Integer.parseInt(kstopkontak.getText()));
-      kondisi.setPosisi_steker(pstopkontak.getText());
-      kondisi.setJumlah_lcd(Integer.parseInt(jkabelLCD.getText()));
-      kondisi.setKondisi_lcd(Integer.parseInt(kkabelLCD.getText()));
-      kondisi.setPosisi_lcd(pkabelLCD.getText());
-      kondisi.setJumlah_lampu(Integer.parseInt(jlampu.getText()));
-      kondisi.setKondisi_lampu(Integer.parseInt(klampu.getText()));
-      kondisi.setPosisi_lampu(pLampu.getText());
-      kondisi.setJumlah_kipasangin(Integer.parseInt(jKipasangin.getText()));
-      kondisi.setKondisi_kipasangin(Integer.parseInt(kKipasangin.getText()));
-      kondisi.setPosisi_kipasangin(pKipasangin.getText());
-      kondisi.setJumlah_ac(Integer.parseInt(jAC.getText()));
-      kondisi.setKondisi_ac(Integer.parseInt(kAC.getText()));
-      kondisi.setPosisi_ac(pAC.getText());
-      kondisi.setJumlah_cctv(Integer.parseInt(jCCTV.getText()));
-      kondisi.setKondisi_cctv(Integer.parseInt(kCCTV.getText()));
-      kondisi.setPosisi_cctv(pCCTV.getText());
-      kondisi.setSSID(SSID.getText());
-      kondisi.setBandwith(Integer.parseInt(bandwith.getText()));
-      
-      kondisi.tampil();
-      
-         JKPS.setVisible(false);
-     
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jstopkontakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jstopkontakActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jstopkontakActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        lingkungan.setKondisi_lantai(llantai.getSelectedItem().toString());
@@ -748,39 +761,28 @@ public class identitasGUI extends javax.swing.JFrame {
        lingkungan.tampil();
        lingkungan.database();
        LINGKUNGAN.setVisible(false);
+       KENYAMANAN.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void llantaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_llantaiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_llantaiActionPerformed
 
-    private void kKebisinganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kKebisinganActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kKebisinganActionPerformed
-
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        kenyamanan.setBau(kbau.getText());
-        kenyamanan.setKeausan(kKebisingan2.getText());
-        kenyamanan.setKebisingan(kKebisingan.getText());
-        kenyamanan.setKebocoran(kKebisingan1.getText());
-        kenyamanan.setKerusakan(kKebisingan4.getText());
-        keamaanan.setKekokohan(kKebisingan6.getText());
-        keamaanan.setKunci(kKebisingan5.getText());
-        keamaanan.setKeamanan(kKebisingan7.getText());
+        kenyamanan.setBau(bau.getSelectedItem().toString());
+        kenyamanan.setKeausan( aus.getSelectedItem().toString());
+        kenyamanan.setKebisingan(bising.getSelectedItem().toString());
+        kenyamanan.setKebocoran(bocor.getSelectedItem().toString());
+        kenyamanan.setKerusakan(kerusakan.getSelectedItem().toString());
+        keamaanan.setKekokohan(kekokohan.getSelectedItem().toString());
+        keamaanan.setKunci(kunci.getSelectedItem().toString());
+        keamaanan.setKeamanan(bahaya.getSelectedItem().toString());
         
         KENYAMANAN.setVisible(false);
         
 
         
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void kKebisingan2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kKebisingan2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kKebisingan2ActionPerformed
-
-    private void kKebisingan4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kKebisingan4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kKebisingan4ActionPerformed
 
     private void formFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_formFocusGained
         // TODO add your handling code here:
@@ -811,6 +813,41 @@ public class identitasGUI extends javax.swing.JFrame {
     private void iusernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iusernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_iusernameActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        JKPS.setVisible(rootPaneCheckingEnabled);
+
+        kondisi.setJumlah_steker(Integer.parseInt(jkipas.getSelectedItem().toString()));
+        kondisi.setKondisi_steker(Integer.parseInt(kstopkontak.getSelectedItem().toString()));
+        kondisi.setPosisi_steker(PSTOP.getSelectedItem().toString());
+        kondisi.setJumlah_lcd(Integer.parseInt(jLCD.getSelectedItem().toString()));
+        kondisi.setKondisi_lcd(Integer.parseInt(kLCD.getSelectedItem().toString()));
+        kondisi.setPosisi_lcd(PLCD.getSelectedItem().toString());
+        kondisi.setJumlah_lampu(Integer.parseInt(jlampu.getSelectedItem(). toString()));
+        kondisi.setKondisi_lampu(Integer.parseInt(kklampu.getSelectedItem().toString()));
+        kondisi.setPosisi_lampu(Plampu.getSelectedItem().toString());
+        kondisi.setJumlah_kipasangin(Integer.parseInt(jkipas.getSelectedItem().toString()));
+        kondisi.setKondisi_kipasangin(Integer.parseInt(kkipas.getSelectedItem().toString()));
+        kondisi.setPosisi_kipasangin(pkipas.getSelectedItem().toString());
+        kondisi.setJumlah_ac(Integer.parseInt(jAC.getSelectedItem().toString()));
+        kondisi.setKondisi_ac(Integer.parseInt(kAC.getSelectedItem().toString()));
+        kondisi.setPosisi_ac(pAC.getSelectedItem().toString());
+        kondisi.setJumlah_cctv(Integer.parseInt(jCCTV.getSelectedItem().toString()));
+        kondisi.setKondisi_cctv(Integer.parseInt(kCCTV.getSelectedItem().toString()));
+        kondisi.setPosisi_cctv(pcctv.getSelectedItem().toString());
+        kondisi.setSSID(SSID.getText());
+        kondisi.setBandwith(Integer.parseInt(bandwith.getText()));
+
+        kondisi.tampil();
+
+        JKPS.setVisible(false);
+        LINGKUNGAN.setVisible(true);
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void SSIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SSIDActionPerformed
 
     
     
@@ -854,19 +891,27 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JPanel KENYAMANAN;
     private javax.swing.JPanel LINGKUNGAN;
     private javax.swing.JPanel LOGIN;
+    private javax.swing.JComboBox PLCD;
+    private javax.swing.JComboBox PSTOP;
+    private javax.swing.JComboBox Plampu;
     private javax.swing.JTextField SSID;
     private javax.swing.JPanel TAMPILAN;
+    private javax.swing.JComboBox aus;
+    private javax.swing.JComboBox bahaya;
     private javax.swing.JTextField bandwith;
+    private javax.swing.JComboBox bau;
+    private javax.swing.JComboBox bising;
+    private javax.swing.JComboBox bocor;
     private javax.swing.JPanel identitas;
     private javax.swing.JTextField iusername;
-    private javax.swing.JTextField jAC;
+    private javax.swing.JComboBox jAC;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JTextField jCCTV;
-    private javax.swing.JTextField jKipasangin;
+    private javax.swing.JComboBox jCCTV;
+    private javax.swing.JComboBox jLCD;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -882,15 +927,12 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
@@ -910,7 +952,6 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
@@ -919,8 +960,13 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel88;
@@ -934,24 +980,19 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jkabelLCD;
-    private javax.swing.JTextField jlampu;
-    private javax.swing.JTextField jstopkontak;
+    private javax.swing.JComboBox jkipas;
+    private javax.swing.JComboBox jlampu;
+    private javax.swing.JComboBox jstopkontak1;
     private javax.swing.JTextField jumlahkursi;
-    private javax.swing.JTextField kAC;
-    private javax.swing.JTextField kCCTV;
-    private javax.swing.JTextField kKebisingan;
-    private javax.swing.JTextField kKebisingan1;
-    private javax.swing.JTextField kKebisingan2;
-    private javax.swing.JTextField kKebisingan4;
-    private javax.swing.JTextField kKebisingan5;
-    private javax.swing.JTextField kKebisingan6;
-    private javax.swing.JTextField kKebisingan7;
-    private javax.swing.JTextField kKipasangin;
-    private javax.swing.JTextField kbau;
-    private javax.swing.JTextField kkabelLCD;
-    private javax.swing.JTextField klampu;
-    private javax.swing.JTextField kstopkontak;
+    private javax.swing.JComboBox kAC;
+    private javax.swing.JComboBox kCCTV;
+    private javax.swing.JComboBox kLCD;
+    private javax.swing.JComboBox kekokohan;
+    private javax.swing.JComboBox kerusakan;
+    private javax.swing.JComboBox kkipas;
+    private javax.swing.JComboBox kklampu;
+    private javax.swing.JComboBox kstopkontak;
+    private javax.swing.JComboBox kunci;
     private javax.swing.JComboBox latap;
     private javax.swing.JComboBox ldinding;
     private javax.swing.JTextField lebar;
@@ -965,13 +1006,10 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JTextField lsuhu;
     private javax.swing.JTextField namajurusan;
     private javax.swing.JTextField namakelas;
-    private javax.swing.JTextField pAC;
-    private javax.swing.JTextField pCCTV;
-    private javax.swing.JTextField pKipasangin;
-    private javax.swing.JTextField pLampu;
+    private javax.swing.JComboBox pAC;
     private javax.swing.JTextField panjang;
     private javax.swing.JPasswordField password;
-    private javax.swing.JTextField pkabelLCD;
-    private javax.swing.JTextField pstopkontak;
+    private javax.swing.JComboBox pcctv;
+    private javax.swing.JComboBox pkipas;
     // End of variables declaration//GEN-END:variables
 }
