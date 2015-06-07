@@ -48,15 +48,8 @@ public class Identitas_ruang {
         this.Program_studi = Program_studi;
     }
         public void database(){
-        try{
-            
-        }
-        catch (final SQLException ex){}
-        catch(final InstantiationException ex){}
-        catch(final IllegalAccessException ex){}
-        catch(final ClassNotFoundException ex){}
-        catch(InputMismatchException ex){}
-        return 0;
+        
+        
     }
     
     public double tampil(){
