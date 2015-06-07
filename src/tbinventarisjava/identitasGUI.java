@@ -265,7 +265,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
         jLabel1.setText("IDENTITAS KELAS");
-        identitas.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 170, 34));
+        identitas.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 170, 34));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Nama kelas");
@@ -619,6 +619,11 @@ public class identitasGUI extends javax.swing.JFrame {
 
         lsirkulasi.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lsirkulasi.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "lancar", "tidak lancar" }));
+        lsirkulasi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lsirkulasiActionPerformed(evt);
+            }
+        });
         LINGKUNGAN.add(lsirkulasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(415, 174, 115, -1));
 
         jLabel44.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -805,8 +810,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
        if(  "saya".equals(iusername.getText())&&"kamu".equals(password.getText())){ 
-           JOptionPane.showMessageDialog(null, "terimakasih anda telah berhasil LOG in");
-           
+           JOptionPane.showMessageDialog(null, "terimakasih anda telah berhasil LOG in");  
        }
        else{
            JOptionPane.showMessageDialog(null,"Username dan Pasword anda salah");
@@ -919,6 +923,10 @@ public class identitasGUI extends javax.swing.JFrame {
         
         KENYAMANAN.setVisible(false);
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void lsirkulasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lsirkulasiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lsirkulasiActionPerformed
 
     
     

@@ -1,1 +1,1 @@
-Kondisi lantai = bersih	Kondisi dinding = bersih	Kondisi atap = bersih	Kondisi pintu = bersih	Kondisi jendela = kotor	
+Kondisi lantai = bersih	Kondisi dinding = bersih	Kondisi atap = bersih	Kondisi pintu = bersih	Kondisi jendela = bersih	
