@@ -516,11 +516,11 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jCCTV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jCCTV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
-        JKPS.add(jCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, -1, 30));
+        JKPS.add(jCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, -1, 20));
 
         jAC.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jAC.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
-        JKPS.add(jAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, 30));
+        JKPS.add(jAC, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 60, 20));
 
         kkipas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         kkipas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
@@ -532,7 +532,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
         kCCTV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         kCCTV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
-        JKPS.add(kCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, -1, 30));
+        JKPS.add(kCCTV, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 60, 20));
 
         kAC.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         kAC.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "input", "1", "2", "3" }));
@@ -765,7 +765,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jLabel93.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel93.setText("TAMPILAN");
-        TAMPILAN.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, -1));
+        TAMPILAN.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, 30));
 
         getContentPane().add(TAMPILAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -811,8 +811,9 @@ public class identitasGUI extends javax.swing.JFrame {
        lingkungan.setKondisi_jendela(ljendela.getSelectedItem().toString());
        lingkungan.setKondisi_pintu(lpintu.getSelectedItem().toString());
        bersih.setSirkulasi_udara(lsirkulasi.getSelectedItem().toString());
-       bersih.setPencahayaan(Integer.parseInt(lpencahayaan.getText().toString()));
-       bersih.setKelembapan(Integer.parseInt(lkelembapan.getText().toString()));
+       bersih.setSuhu(Integer.parseInt(lsuhu.getText()));
+       bersih.setPencahayaan(Integer.parseInt(lpencahayaan.getText()));
+       bersih.setKelembapan(Integer.parseInt(lkelembapan.getText()));
        
        lingkungan.tampil();
        lingkungan.database();
