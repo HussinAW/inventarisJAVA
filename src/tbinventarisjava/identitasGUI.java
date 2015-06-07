@@ -27,6 +27,7 @@ public class identitasGUI extends javax.swing.JFrame {
         //IR identitas = new IR();
     public identitasGUI() {
         initComponents();
+       
         identitas.setVisible(false);
         JKPS.setVisible(false);
         LINGKUNGAN.setVisible(false);
@@ -47,6 +48,8 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel89 = new javax.swing.JLabel();
         iusername = new javax.swing.JTextField();
         password = new javax.swing.JPasswordField();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
         identitas = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -212,40 +215,48 @@ public class identitasGUI extends javax.swing.JFrame {
         });
         LOGIN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel90.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel90.setFont(new java.awt.Font("OCR-A BT", 1, 24)); // NOI18N
         jLabel90.setText("UNIVERSITAS MUHAMMADIYAH MALANG");
-        LOGIN.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, -1, -1));
+        LOGIN.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
-        jLabel91.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
-        jLabel91.setText("INVENTARIS KELAS");
-        LOGIN.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
+        jLabel91.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        jLabel91.setText("ADMIN AREA");
+        LOGIN.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
 
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton5.setText("masuk");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        LOGIN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
+        LOGIN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, -1, -1));
 
-        jLabel88.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel88.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(51, 255, 255));
         jLabel88.setText("Username");
-        LOGIN.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
+        LOGIN.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, 110, -1));
 
-        jLabel89.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel89.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(51, 255, 255));
         jLabel89.setText("Password");
-        LOGIN.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, -1));
-        LOGIN.add(iusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 160, 30));
+        LOGIN.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 90, -1));
+        LOGIN.add(iusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 190, 40));
 
         password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordActionPerformed(evt);
             }
         });
-        LOGIN.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, 160, 30));
+        LOGIN.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, 190, 40));
 
-        getContentPane().add(LOGIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 530));
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto/Logo_umm.png"))); // NOI18N
+        LOGIN.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 170, 140));
+
+        jLabel92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto/umm11.jpg"))); // NOI18N
+        LOGIN.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 400));
+
+        getContentPane().add(LOGIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 400));
 
         identitas.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         identitas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -322,7 +333,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
         identitas.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        getContentPane().add(identitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 590));
+        getContentPane().add(identitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 590));
 
         JKPS.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         JKPS.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
@@ -484,7 +495,7 @@ public class identitasGUI extends javax.swing.JFrame {
         });
         JKPS.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 560, -1, -1));
 
-        getContentPane().add(JKPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 590));
+        getContentPane().add(JKPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 590));
 
         LINGKUNGAN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -581,7 +592,7 @@ public class identitasGUI extends javax.swing.JFrame {
         jLabel48.setText("C");
         LINGKUNGAN.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 255, 17, -1));
 
-        getContentPane().add(LINGKUNGAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 520));
+        getContentPane().add(LINGKUNGAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 590, 520));
 
         KENYAMANAN.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         KENYAMANAN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -897,7 +908,7 @@ public class identitasGUI extends javax.swing.JFrame {
            
        }
        LOGIN.setVisible(false);
-       
+       identitas.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
@@ -1050,6 +1061,8 @@ public class identitasGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel94;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollBar jScrollBar1;
