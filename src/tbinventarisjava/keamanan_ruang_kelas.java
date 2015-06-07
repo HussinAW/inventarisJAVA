@@ -113,7 +113,7 @@ public class keamanan_ruang_kelas extends super_abstrack {
     }
 
     @Override
-    public double simpan() {
+    public void database() {
          try{
             FileWriter  Writer = new FileWriter ("Keamanan_ruang_kelas.txt");
             Writer.write("Kekokohan = "+getKekokohan()+"\t");
@@ -125,7 +125,6 @@ public class keamanan_ruang_kelas extends super_abstrack {
             ex.printStackTrace();
 
         }
-        return 0;
     }
     
     

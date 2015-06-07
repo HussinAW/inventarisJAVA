@@ -110,7 +110,7 @@ public class Kebersihan_ruang_kelas extends super_abstrack {
     }
 
     @Override
-    public double simpan() {
+    public void database() {
     try{
             FileWriter  Writer = new FileWriter ("Kebersihan_ruang_kelas.txt");
             Writer.write("Sirkulasi udara = "+getSirkulasi_udara()+"\t");
@@ -122,6 +122,5 @@ public class Kebersihan_ruang_kelas extends super_abstrack {
         catch(IOException ex){
             ex.printStackTrace();   
     }
-        return 0;
 }
 }

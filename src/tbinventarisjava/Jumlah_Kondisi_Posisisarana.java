@@ -311,7 +311,7 @@ public int getKondisi_lcd() {
     }
 
     @Override
-    public double simpan() {
+    public void database() {
                try{
             FileWriter  Writer = new FileWriter ("jumlah_kondisi_posisiprasarana.txt");
             Writer.write("jumlah steker = "+getJumlah_steker()+"\t");
@@ -340,7 +340,7 @@ public int getKondisi_lcd() {
             ex.printStackTrace();
 
         }
-    return 0;
+    
     }
 
    

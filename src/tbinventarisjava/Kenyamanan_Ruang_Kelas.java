@@ -116,7 +116,7 @@ public double tampil(){
     }
 
     @Override
-    public double simpan() {
+    public void database() {
     try{
             FileWriter  Writer = new FileWriter ("Kenyamanan Ruang Kelas.txt");
             Writer.write("Kebisingan = "+getKebisingan()+"\t");
@@ -130,7 +130,6 @@ public double tampil(){
             ex.printStackTrace();
 
         }   
-    return 0;
     }
 
 }

@@ -675,7 +675,7 @@ public class identitasGUI extends javax.swing.JFrame {
        nama.setNama_ruang(namakelas.getText());
        nama.setLokasi_ruang(lokasiruang.getText());
        nama.setProgram_studi(namajurusan.getText());
-       nama.simpan();
+       nama.database();
        nama.tampil();
        panjangnya=Integer.parseInt(panjang.getText());
        lebarnya=Integer.parseInt(lebar.getText());
@@ -746,7 +746,7 @@ public class identitasGUI extends javax.swing.JFrame {
        lingkungan.setKondisi_pintu(lpintu.getSelectedItem().toString());
        
        lingkungan.tampil();
-       lingkungan.simpan();
+       lingkungan.database();
        LINGKUNGAN.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 

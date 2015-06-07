@@ -128,7 +128,7 @@ public  class Lingkungan_Ruang_Kelas extends super_abstrack{
 
      }
     @Override
-    public double simpan(){
+    public void database(){
         try{
             FileWriter  Writer = new FileWriter ("Lingkungan Ruang Kelas.txt");
             Writer.write("Kondisi lantai = "+getKondisi_lantai()+"\t");
@@ -142,7 +142,7 @@ public  class Lingkungan_Ruang_Kelas extends super_abstrack{
             ex.printStackTrace();
 
         }
-        return 0;
+
     }
 
     

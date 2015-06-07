@@ -5,8 +5,15 @@
  */
 package tbinventarisjava;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.InputMismatchException;
 
 /**
  *
@@ -40,18 +47,15 @@ public class Identitas_ruang {
     public void setProgram_studi(String Program_studi) {
         this.Program_studi = Program_studi;
     }
-        public double simpan(){
+        public void database(){
         try{
-            FileWriter Writer = new FileWriter("Identitas Kelas.txt");
-            Writer.write("Nama ruang= "+getNama_ruang()+"\t");
-            Writer.write("Lokasi ruang= "+getLokasi_ruang()+"\t");
-            Writer.write("Program studi= "+getProgram_studi()+"\t"); 
-            Writer.close();
-        }
-        catch(IOException ex){
-            ex.printStackTrace();
             
         }
+        catch (final SQLException ex){}
+        catch(final InstantiationException ex){}
+        catch(final IllegalAccessException ex){}
+        catch(final ClassNotFoundException ex){}
+        catch(InputMismatchException ex){}
         return 0;
     }
     
