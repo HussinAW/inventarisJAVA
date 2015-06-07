@@ -207,6 +207,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
         LOGIN.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         LOGIN.setFocusCycleRoot(true);
+        LOGIN.setMaximumSize(new java.awt.Dimension(690, 400));
         LOGIN.setNextFocusableComponent(identitas);
         LOGIN.addHierarchyListener(new java.awt.event.HierarchyListener() {
             public void hierarchyChanged(java.awt.event.HierarchyEvent evt) {
@@ -230,17 +231,17 @@ public class identitasGUI extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        LOGIN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, -1, -1));
+        LOGIN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, -1, -1));
 
-        jLabel88.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel88.setFont(new java.awt.Font("Tahoma", 3, 20)); // NOI18N
         jLabel88.setForeground(new java.awt.Color(51, 255, 255));
         jLabel88.setText("Username");
-        LOGIN.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, 110, -1));
+        LOGIN.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 110, -1));
 
-        jLabel89.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel89.setFont(new java.awt.Font("Tahoma", 3, 20)); // NOI18N
         jLabel89.setForeground(new java.awt.Color(51, 255, 255));
         jLabel89.setText("Password");
-        LOGIN.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 90, -1));
+        LOGIN.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 110, -1));
         LOGIN.add(iusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 190, 40));
 
         password.addActionListener(new java.awt.event.ActionListener() {
@@ -261,8 +262,9 @@ public class identitasGUI extends javax.swing.JFrame {
         identitas.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         identitas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("IDENTITAS KELAS");
-        identitas.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 102, 34));
+        identitas.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 170, 34));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Nama kelas");
@@ -275,13 +277,14 @@ public class identitasGUI extends javax.swing.JFrame {
         });
         identitas.add(namakelas, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 50, 180, 40));
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton1.setText("selanjutnya");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        identitas.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, -1, -1));
+        identitas.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 450, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Lokasi ruang kelas:");
@@ -317,7 +320,7 @@ public class identitasGUI extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Jumlah Kursi");
-        identitas.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 90, 30));
+        identitas.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 90, 30));
         identitas.add(jumlahkursi, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, 180, 40));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -796,6 +799,7 @@ public class identitasGUI extends javax.swing.JFrame {
        //identitas.simpan();
        //identitas.tampil();
        identitas.setVisible(false);
+       JKPS.setVisible(true);
        
     }//GEN-LAST:event_jButton1ActionPerformed
 
