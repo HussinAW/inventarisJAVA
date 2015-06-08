@@ -916,13 +916,16 @@ public class identitasGUI extends javax.swing.JFrame {
                 final String username="root";
                 final String password="";
                 final Connection koneksi = DriverManager.getConnection("jdbc:mysql://localhost:3306/sistem_inventaris", username, password);
-                final PreparedStatement prepare = koneksi.prepareStatement(" INSERT INTO identitas_kelas " + " (Nama_ruang, Lokasi_ruang, Program_studi, Panjang_ruang, Lebar_ruang, J_kursi, J_stopkontak, J_kabel_LCD, J_lampu, J_kipas_angin, J_AC, J_CCTV, SSID, Bandwidth, K_lantai, K_dinding, K_atap, K_pintu, K_jendela, Sirkulasi_uadara, N_pencahayaan, N_kelembapan, Suhu )"+ " VALUES "+" (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+                
+                final PreparedStatement prepare = koneksi.prepareStatement(" INSERT INTO inventaris " + " (Nama_ruang, Lokasi_ruang, Program_studi, Panjang_ruang, Lebar_ruang, Jumlah_kursi, Jumlah_steker, Jumlah_kabelLCD, Jumlah_lampu, Jumlah_kipasangin, Jumlah_AC, Jumlah_CCTV, SSID, Bandwidth, Kondisi_lantai, Kondisi_dinding, Kondisi_atap, Kondisi_pintu, Kondisi_jendela, Sirkulasi_udara, Pencahayaan, Kelembapan, Suhu, Kebocoran, Bau, Aus, Rusak, Bising, Kekokohan, Kunci, Keamanan)"+" VALUES "+"(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);");
+                
+                        //+ "Panjang_ruang, Lebar_ruang, J_kursi, J_stopkontak, J_kabel_LCD, J_lampu, J_kipas_angin, J_AC, J_CCTV, SSID, Bandwidth, K_lantai, K_dinding, K_atap, K_pintu, K_jendela, Sirkulasi_uadara, N_pencahayaan, N_kelembapan, Suhu )"+ " VALUES "+" (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
                 prepare.setString(1,nama.getNama_ruang());
                 prepare.setString(2,nama.getLokasi_ruang());
                 prepare.setString(3,nama.getProgram_studi());
-                prepare.setDouble(4,isi.panjang);
-                prepare.setDouble(5,isi.lebar);
-                prepare.setDouble(6,isi.jumlah_kursi);
+                prepare.setDouble(4,panjangnya);
+                prepare.setDouble(5,lebarnya);
+                prepare.setDouble(6,jumlahkursinya);
                 prepare.setInt(7,kondisi.getJumlah_steker());
                 prepare.setInt(8,kondisi.getJumlah_lcd());
                 prepare.setInt(9,kondisi.getJumlah_lampu());
@@ -936,14 +939,20 @@ public class identitasGUI extends javax.swing.JFrame {
                 prepare.setString(17,lingkungan.getKondisi_atap());
                 prepare.setString(18,lingkungan.getKondisi_pintu());
                 prepare.setString(19,lingkungan.getKondisi_jendela());
-                prepare.setString(20, bersih.getSirkulasi_udara());
+                prepare.setString(20,bersih.getSirkulasi_udara());
                 prepare.setInt(21,bersih.getPencahayaan());
                 prepare.setInt(22,bersih.getKelembapan());
-                prepare.setInt(23, bersih.getSuhu());
-                
-                
-                
+                prepare.setInt(23,bersih.getSuhu());
+                prepare.setString(24,kenyamanan.getKebocoran());
+                prepare.setString(25,kenyamanan.getBau());
+                prepare.setString(26,kenyamanan.getKeausan());
+                prepare.setString(27,kenyamanan.getKerusakan());
+                prepare.setString(28,kenyamanan.getKebisingan());
+                prepare.setString(29, keamaanan.getKekokohan());///////
+                prepare.setString(30,keamaanan.getKunci());
+                prepare.setString(31,keamaanan.getKeamanan());               
                 prepare.executeUpdate();
+                
         }
         catch (final SQLException ex){}
         catch(final InstantiationException ex){}
