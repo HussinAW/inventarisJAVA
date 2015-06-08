@@ -12,6 +12,7 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.InputMismatchException;
+import javax.swing.JPanel;
 
 
 /**
@@ -836,15 +837,19 @@ public class identitasGUI extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
        if(  "saya".equals(iusername.getText())&&"kamu".equals(password.getText())){ 
-           JOptionPane.showMessageDialog(null, "terimakasih anda telah berhasil LOG in");  
+           JOptionPane.showMessageDialog(null, "terimakasih anda telah berhasil LOG in");
+           LOGIN.setVisible(false);
+           identitas.setVisible(true);
        }
        else{
            JOptionPane.showMessageDialog(null,"Username dan Pasword anda salah");
+           LOGIN.setVisible(true);
+           identitas.setVisible(false);
        
            
        }
-       LOGIN.setVisible(false);
-       identitas.setVisible(true);
+       
+       
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
